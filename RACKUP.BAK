@@ -1,0 +1,1493 @@
+**************************************************************
+*
+* INITIATED:		 JUNE 6,1991
+* MODIFIED:		 !
+* SOFTWARE:		 SHAWN LIPTAK
+*
+* COPYRIGHT (C) 1991 WILLIAMS ELECTRONICS GAMES, INC.
+*
+**************************************************************
+      	.FILE	'RACKUP.ASM'
+	.TITLE	'TOTAL CARNAGE GAME PROGRAM'
+	.WIDTH	132
+	.OPTION	B,D,L,T
+	.MNOLIST
+
+	.include	"mproc.equ"		;mproc equates
+	.include	"disp.equ"		;Display proc. equates
+	.include	"\video\sys\sys.inc"	;Z unit system equates
+	.include	"game.equ"
+	.include	"imgtbl.glo"
+	.include	"shawn.hdr"		;My macros
+
+
+
+;sound headers used
+
+;symbols externally defined
+
+	.ref	JM1,COLTAB,CYCLE_TABLE,STATIC_COVER,PLYRPRCS,INTRO
+	.ref	RACKBMOD,RANDOM,GPALOBJ,PALSET,FINDPAL,PCNT
+	.ref	IRQSKYE,ERASE_TXT,HEXTOASC,FRANIM,HSTGLST
+	.ref	CRMP,BCDBIN,BINBCD
+	.ref	WSPEED,STRT_S,STATUS
+	.ref	COLCYC,BGND_UD1,BAKMODS,WNDWON,WNDWOFF,NO_START,WRLD
+	.ref	STRCNRMO,STRCNRMO_1,STRCNRM,RD15FONT,RD7FONT,RD8FONT
+	.ref	P1DATA,P2DATA
+	.ref	SLDEBUG
+
+;symbols defined in this file
+
+
+;uninitialized ram definitions
+
+	.bss	PALTMP		,16*16*2 ;Allocate 2 x color area in ram
+	.bss	statspal	,31*16 	;Statistics palette
+	.bss	animdeath1	,16    	;CntDn for anim procs to die
+	.bss	animdeath2	,16    	;^
+	.bss	scoredie	,16	;!0=Score process dies
+	.bss	hitpercent1	,16	;Player1 %
+	.bss	hitpercent2	,16	;Player2 %
+	.bss	hitsmin1	,16	;Player1 hits per minute
+	.bss	hitsmin2	,16	;Player2 ^
+
+	.text
+
+
+ SUBR	DO_RACKUP
+
+	move	@SLDEBUG,a0
+	btst	0,a0
+	jrnz	skiprc
+	CREATE	0,rackcaller		;DEBUG
+skiprc
+	movk	5,a0			;speed of window
+	move	a0,@WSPEED
+	JSRP	WNDWON			;grow window
+
+	movk	1,a0			;delay start of a second plyr flag
+	move	a0,@NO_START
+
+	movi	6*32*32+4*32+4,a0	;Bkgnd color
+	move	a0,@IRQSKYE
+
+;This will turn on general and chick.  they will animate until all
+;intrpid processes are killed
+
+	movi	rackupbg_t,a0		;Show home base view screen
+	move	a0,@BAKMODS,L
+	calla	BGND_UD1
+	calla	STRT_S			;Static color cycle
+	movi	CRMP,A8 		;Pal name
+	movi	PALTMP,A9		;Ram area
+	movi	[58,64],A10		;Begin/end color #
+	movk	4,a11			;Rate in ticks
+	CREATE	CYCPID,COLCYC		;Color cycler on
+
+	clr	a0
+	move	a0,@WRLD		;Do world adj
+
+
+	movi	incom_st,a0 		;*Text
+	callr	print_xy
+
+	JSRP	WNDWOFF
+
+	SLEEP	80
+	calla	ERASE_TXT
+
+					;>Make tiles
+	movi	8*4,a1			;# Panels
+	movi	-4*>25800+>12c00,a2	;Velocity
+	movi	10,a3
+	movi	200,a5
+rp20	movi	panel_t,a14
+	calla	GPALOBJ			;Get palette & obj
+	calla	STFOBJ			;Stuff object data
+	move	a2,*a0(OXVEL),L		;Set XVEL
+	move	a3,*a0(OYPOS)		;New Y
+	addi	46,a3
+	move	a5,*a0(OZPOS)
+	movk	3,a4
+	and	a1,a4
+	subk	1,a4
+	jrne	rp30
+	addi	>25800,a2
+	movi	10,a3
+	movk	1,a4
+	xor	a4,a5			;Toggle 0 Bit
+rp30	calla	ADJSTWTL		;Adjust into world
+	calla	INSOBJ			;Insert obj
+	dsj	a1,rp20
+
+	SLEEP	20
+
+	calla	STOPOBJS		;Stop tiles
+
+	move	@P1DATA+PSCORE,a0,L	;Scores to binary
+	calla	BCDBIN
+	move	a0,@P1DATA+PSCORE,L
+	move	@P2DATA+PSCORE,a0,L
+	calla	BCDBIN
+	move	a0,@P2DATA+PSCORE,L
+
+;	move	@PLYRPRCS,a0,L			;transfer tshots from
+;	move	*a0(TSHOTS),a0			;plyr procs into
+;	move	a0,@P1DATA+TOTSHOTS		;p1 and p2 data area
+;	move	@PLYRPRCS+32,A0,L		;for rackup screen
+;	move	*a0(TSHOTS),A0
+;	move	a0,@P2DATA+TOTSHOTS
+
+	move	@P1DATA+THITS,a1
+	movi	100,a0
+	mpyu	a0,a1
+	move	@P1DATA+TOTSHOTS,a2
+	divu	a2,a1
+	move	a1,@hitpercent1
+
+	move	@P2DATA+THITS,a1
+	movi	100,a0
+	mpyu	a0,a1
+	move	@P2DATA+TOTSHOTS,a2
+	divu	a2,a1
+	move	a1,@hitpercent2
+
+	CREATE	0,score_prt
+
+	movi	stats_st,a0 		;Print stats
+	callr	print_xy
+	move	@STATUS,a8
+	btst	0,a8			;Player1
+	jrz	rp100
+	movi	statsp1_st,a0
+	callr	print_xy
+rp100	btst	1,a8			;Player2
+	jrz	rp110
+	movi	statsp2_st,a0
+	callr	print_xy
+rp110
+
+	movi	[2,30],a8		;Color 2, 30 colors
+	movi	SCOREPAL,a9
+	movi	COLTAB,a10		;Color table
+	movk	3,a11			;Rate of cycle
+	CREATE	CYCPID,CYCLE_TABLE
+	movi	[1,1],a8
+	movi	SCOREPAL,a9
+	movi	statscolor_t,a10
+	movk	3,a11
+	CREATE	CYCPID,CYCLE_TABLE
+	movi	[32,2],a8
+	movi	SCOREPAL,a9
+	movi	statscolor_t,a10
+	movk	5,a11
+	CREATE	CYCPID,CYCLE_TABLE
+
+	callr	joy_read
+	jrnz	rpsk30
+	SLEEP	60*4
+rpsk30
+
+	movk	5,a11
+	JSRP	text_shrink
+
+	callr	joy_read		;DEBUG
+	jrnz	rpsk50
+
+	move	@P1DATA+THSTGS,a2
+	move	@P2DATA+THSTGS,a3
+	movi	bonush_st,a0
+	movi	hostage_l,a1
+	JSRP	bonus_showrack
+
+	move	@P1DATA+TFLAGS,a2
+	move	@P2DATA+TFLAGS,a3
+	movi	bonusf_st,a0
+	movi	flag_l,a1
+	JSRP	bonus_showrack
+
+	move	@P1DATA+CASHCNT,a2
+	move	@P2DATA+CASHCNT,a3
+	movi	bonusg_st,a0
+	movi	JM1,a1
+	JSRP	bonus_showrack
+
+
+	SLEEP	60*1
+rpsk50
+	movk	1,a0
+	move	a0,@scoredie		;Kill it
+
+
+	movi	play_t,a14		;>Show heros
+rpp30	calla	GPALOBJ
+	calla	STFOBJ
+	calla	ADJSTWTL
+	calla	INSOBJ
+	move	*a14,a0
+	jrge	rpp30
+
+;	MOVE	*A1,A0,L
+;	movi	HERO2P,A0		;HERO 2 PAL
+;	CALLA	GETFPAL			;GET A COLOR MAP ASSIGNMENT
+;A8=EYES
+;	MOVE	A0,*A8(OPAL),W		;STORE THE NEW PALETTE
+
+
+
+	move	@OBJLST,a1,L		;>Tiles fly away
+rp200	move	*a1(OZPOS),a0
+	subi	200,a0
+	cmpi	1,a0
+	jrhi	rp230
+	movk	5,a2			;Vel
+	btst	0,a0
+	jrz	rp220
+	neg	a2			;-Vel
+rp220	move	a2,*a1(OYVEL+16)
+
+rp230	move	*a1,a1,L
+	jrnz	rp200
+
+
+	SLEEP	60*1
+
+	move	@OBJLST,a0,L		;>Delete tiles
+rp300	move	*a0(OZPOS),a2
+	subi	200,a2
+	cmpi	1,a2
+	jrhi	rp330
+	move	*a0,a1,L		;Get * to next obj
+	calla	DELOBJ			;Kill
+	move	a1,a0
+	jruc	rp340
+rp330	move	*a0,a0,L
+rp340	jrnz	rp300
+
+
+;Heros say stuff
+;	SLEEP	60*2
+
+
+	move	@P1DATA+PSCORE,a0,L	;Scores to BCD
+	calla	BINBCD
+	move	a0,@P1DATA+PSCORE,L
+	move	@P2DATA+PSCORE,a0,L
+	calla	BINBCD
+	move	a0,@P2DATA+PSCORE,L
+
+
+	movk	1,a11
+	CREATE	0,STATIC_COVER
+	SLEEP	25
+
+	clr	a0
+	move	a0,@IRQSKYE
+
+	movi	CLSDEAD,a0		;>Delete heros
+	movi	>ff00,a1
+	calla	KILOBJ
+
+	JSRP	dictator_taunt
+
+	movi	CYCPID,a0
+	movi	-1,a1
+	calla	KILALL
+
+	movi	SCOREPAL,a0		;*Color
+	clr	a1			;Palette 0, Color 0
+	move	*a0+,a2			;# Colors
+	calla	PALSET
+
+	clr	a0			;Enable player starts
+	move	a0,@NO_START
+
+rackend	SLEEP	1
+	jruc	rackend
+
+
+rackupbg_t
+	.long	RACKBMOD		;this is from blimp (module name)
+	.word	2,>35e			;x,y start pos.
+	.long	>ffffffff
+
+incom_st
+	.word	PRTF15,200,55,1			;Mode,X,Y,color
+	.byte	"INCOMING DATA TRANSMISSION...",0
+	.word	-1
+
+play_t	.long	[40,0],[74,0],HERO1		;x,y,img name
+	.word	50,DMAWNZ,CLSDEAD+1		;zpos,oflags,oid
+	.long	0,0				;xvel,yvel
+	.long	[230,0],[30,0],HERO2
+	.word	50,DMAWNZ,CLSDEAD+1
+	.long	0,0
+	.long	[50,0],[60,0],HEROI1
+	.word	50,DMAWNZ,CLSDEAD+1
+	.long	0,0
+	.long	[250,0],[30,0],HEROI1
+	.word	50,DMAWNZ,CLSDEAD+1
+	.long	0,0
+	.long	[120,0],[18,0],BOON1
+	.word	50,DMAWNZ,CLSDEAD+1
+	.long	0,0
+	.long	[250,0],[18,0],BOON1
+	.word	50,DMAWNZ+M_FLIPH,CLSDEAD+1
+	.long	0,0
+	.long	[200,0],[76,0],BOON2
+	.word	50,DMAWNZ+M_FLIPH,CLSDEAD+1
+	.long	0,0
+	.word	-1				;End
+
+panel_t	.long	[174,0],[0,0],RACKBLK		;x,y,img name
+	.word	200,DMAWNZ,CLSDEAD		;zpos,oflags,oid
+	.long	0,0				;xvel,yvel
+
+statscolor_t
+	COLORW	16,0,0
+	COLORW	20,00,08, 24,00,12, 28,00,16, 31,00,20
+	COLORW	28,00,24, 24,00,28, 20,00,31, 16,00,28
+	COLORW	08,20,00, 16,24,00, 24,28,00, 31,31,00
+	COLORW	20,28,00, 12,24,00, 08,20,00, 02,16,00
+	COLORW	00,08,20, 00,16,24, 00,24,28, 00,31,31
+	COLORW	00,20,28, 00,10,24, 00,00,20, 00,00,16
+	COLORW	16,0,0
+	.word	-1
+
+PRTF15	.equ	1		;Font15
+PRTF8	.equ	2		;Font8 MultiColor
+PRTDEC	.equ	4		;Decimal
+PRTBCD	.equ	8		;BCD (Long)
+PRTL	.equ	16		;Long data
+
+PRTF15B	.equ	0
+PRTF8B	.equ	1
+PRTDECB	.equ	2
+PRTBCDB	.equ	3
+PRTLB	.equ	4
+
+stats_st
+	.word	PRTF15,200,20,1			;Mode,X,Y,color
+	.byte	"SCORE",0
+	.word	0,200,40,2
+	.byte	"SHOTS FIRED",0
+	.word	0,200,50,3
+	.byte	"ENEMY HITS",0
+	.word	0,200,60,4
+	.byte	"HIT PERCENTAGE",0
+	.word	0,200,70,5
+	.byte	"HITS PER MINUTE",0
+	.word	0,200,80,6
+	.byte	"WEAPONS PICKED UP",0
+	.word	0,200,90,7
+	.byte	"BOMBS USED",0
+	.word	0,200,100,8
+	.byte	"MISSILE STRIKES",0
+	.word	0,200,110,9
+	.byte	"BIG STUFF DESTROYED",0
+	.word	0,200,120,10
+	.byte	"EXTRA MEN EARNED",0
+	.word	0,200,130,11
+	.byte	"MINES STEPPED ON",0
+	.word	PRTF15,190,160,1
+	.byte	"STATISTICS",0
+	.word	-1			;End
+
+statsp1_st
+	.word	PRTDEC,70,40,30
+	.long	P1DATA+TOTSHOTS
+	.word	PRTDEC,70,50,29
+	.long	P1DATA+THITS
+	.word	PRTDEC,70,60,28
+	.long	hitpercent1
+	.word	PRTDEC,70,70,27
+	.long	hitsmin1
+	.word	PRTDEC,70,80,26
+	.long	P1DATA+TWPNS
+	.word	PRTDEC,70,90,25
+	.long	P1DATA+BMBSUSED
+	.word	PRTDEC,70,100,24
+	.long	P1DATA+TMISLS
+	.word	PRTDEC,70,110,23
+	.long	P1DATA+TBIGSTF
+	.word	PRTDEC,70,120,22
+	.long	P1DATA+TEARNED
+	.word	PRTDEC,70,130,21
+	.long	P1DATA+TEARNED
+	.word	-1
+
+statsp2_st
+	.word	PRTDEC,330,40,30
+	.long	P2DATA+TOTSHOTS
+	.word	PRTDEC,330,50,29
+	.long	P2DATA+THITS
+	.word	PRTDEC,330,60,28
+	.long	hitpercent2
+	.word	PRTDEC,330,70,27
+	.long	hitsmin2
+	.word	PRTDEC,330,80,26
+	.long	P2DATA+TWPNS
+	.word	PRTDEC,330,90,25
+	.long	P2DATA+BMBSUSED
+	.word	PRTDEC,330,100,24
+	.long	P2DATA+TMISLS
+	.word	PRTDEC,330,110,23
+	.long	P2DATA+TBIGSTF
+	.word	PRTDEC,330,120,22
+	.long	P2DATA+TEARNED
+	.word	PRTDEC,330,130,21
+	.long	P2DATA+TEARNED
+	.word	-1
+
+bonush_st
+	.word	PRTF15,198,20,1
+	.byte	"SCORE",0
+	.word	PRTF15,198,160,1
+	.byte	"HOSTAGE BONUS",0
+	.word	-1
+bonusf_st
+	.word	PRTF15,198,20,1
+	.byte	"SCORE",0
+	.word	PRTF15,198,160,1
+	.byte	"AMERICA BONUS",0
+	.word	-1
+bonusg_st
+	.word	PRTF15,198,20,1
+	.byte	"SCORE",0
+	.word	PRTF15,198,160,1
+	.byte	"GEM BONUS",0
+	.word	-1
+
+
+hostxy_t
+	.word	34,45, 64,45, 94,45, 124,45, 154,45
+	.word	49,65, 79,65, 109,65, 139,65
+	.word	34,85, 64,85, 94,85, 124,85, 154,85
+	.word	49,105, 79,105, 109,105, 139,105
+;	.word	34,125, 64,125, 94,125, 124,125, 154,125
+	.word	-1
+
+
+hostage_l
+	.long	MUG1Z
+	.word	1
+	.long	MUG1AZ
+	.word	255
+	.long	0
+
+flag_l	.long	FLG1	;USA flag list
+	.word	5
+	.long	FLG2
+	.word	5
+	.long	FLG3
+	.word	5
+	.long	FLG4
+	.word	5
+	.long	FLG5
+	.word	5
+	.long	0
+
+
+
+********************************
+* Read joysticks
+
+ SUBRP	joy_read
+	move	@SWITCH,a0
+	not	a0
+	rets			;Pass CC
+
+
+********************************
+* Print an XY string set
+
+ SUBRP	print_xy	;A0=*XY Text
+
+	PUSH	a8
+
+	move	a0,a8
+prtxy5	movk	[0,1],a10		;Char y,x spacing
+	movi	RD7FONT,a11		;*Font
+	move	*a8+,a1			;Mode word
+	btst	PRTF15B,a1
+	jreq	prtxy10
+	movi	RD15FONT,a11		;*Font
+prtxy10	move	*a8+,a9,L		;Scrn y/x
+	move	*a8+,a6			;Color
+	move	a6,a2
+	sll	8,a6
+	or	a2,a6
+
+	btst	PRTDECB,a1
+	jreq	prtxy30
+	move	*a8+,a2,L		;Binary mode
+	move	*a2,a0			;Get word
+	btst	PRTLB,a1
+	jreq	prtxy20
+	move	*a2,a0,L		;Get long
+prtxy20	PUSH	a8
+	move	a0,a8
+	calla	HEXTOASC
+	jruc	prtxy40
+
+prtxy30	btst	PRTBCDB,a1
+	jruc	prtxy70
+;	jreq	prtxy70
+;	move	*a8+,a0,L		;BCD mode
+;	move	*a0,a0,L
+;	callr	bcdtoasc
+;	PUSH	a8
+;	move	a0,a8
+prtxy40	clr	a0
+	JSRP	STRCNRMO
+	PULL	a8
+	jruc	prtxy80
+
+prtxy70					;String mode
+	btst	PRTF8B,a1
+	jreq	prtxy74
+	movi	BLLNP5,a0
+	calla	FINDPAL
+	move	a0,a6
+	movi	RD8FONT,a11
+	clr	a0
+	JSRP	STRCNRMO_1		;Full color font
+	jruc	prtxy77
+
+prtxy74	clr	a0			;Sleep time
+	JSRP	STRCNRMO		;Print string, objects
+prtxy77	addk	8,a8			;Round up
+	srl	4,a8
+	sll	4,a8
+prtxy80	move	*a8,a0			;-=End
+	jrge	prtxy5
+
+	PULL	a8
+	rets
+
+
+********************************
+* Set pallette 0 from buffer
+
+	.bss	colorbuf	,16*31		;31 Color buffer
+
+ SUBRP	setpall0
+	PUSH	a1,a2
+	movi	colorbuf,a0		;*Color
+	movk	1,a1			;Palette 0, Color 1
+	movk	31,a2			;# Colors
+	calla	PALSET
+	PULL	a1,a2
+	rets
+
+
+
+********************************
+* Vertically shrink text
+
+ SUBRP	text_shrink		;A11=Sleep time
+
+	movk	8,a10			;Size for x2 shrinage
+txs20	move	a11,a0
+	calla	PRCSLP
+	clr	a8
+	move	@OBJLST,a9,L		;>Find and shrink
+txs40	move	*a9(OID),a0
+	sll	3+16,a0			;Mask type
+	srl	8+3+16,a0
+	cmpi	TYPTEXT/256,a0
+	jrne	txs70
+	move	*a9(OSIZEY),a0
+	subk	1,a0			;Shrink
+	jrz	txs70			;Min of 1
+	cmp	a10,a0
+	jrlt	txs50
+	subk	1,a0			;Shrink again
+txs50	move	a0,*a9(OSIZEY)
+	movk	1,a8
+txs70	move	*a9,a9,L
+	jrnz	txs40
+
+	subk	1,a10			;Lower x2 min
+	move	a8,a8
+	jrnz	txs20
+
+	calla	ERASE_TXT
+
+	RETP
+
+
+********************************
+* Print players score (Process)
+
+ SUBRP	score_prt
+	clr	a0
+	move	a0,@scoredie
+
+scp20	move	@STATUS,a8
+	btst	0,a8
+	jrz	scp50
+	PUSH	a8
+	move	@P1DATA+PSCORE,a8,L
+	calla	HEXTOASC
+	movi	>2020,a6
+	movi	[20,100],a9		;Scrn y/x
+	movk	[0,1],a10		;Spacing
+	movi	RD15FONT,a11
+	clr	a0			;No sleep
+	JSRP	STRCNRM			;Print, no objs
+	PULL	a8
+
+scp50	btst	1,a8
+	jrz	scp80
+	move	@P2DATA+PSCORE,a8,L
+	calla	HEXTOASC
+	movi	>2121,a6
+	movi	[20,300],a9		;Scrn y/x
+	movk	[0,1],a10		;Spacing
+	movi	RD15FONT,a11
+	clr	a0			;No sleep
+	JSRP	STRCNRM			;Print, no objs
+
+scp80	SLEEP	1
+	move	@scoredie,a0
+	jrz	scp20
+	DIE
+
+
+
+********************************
+* Do a bonus rack
+
+	APTRPD	BONUSLP,0	;*Bonus anim list
+	WORDPD	BONUSC1,2	;Play 1 # items
+	WORDPD	BONUSC2,3	;Play 2 ^
+
+
+ SUBRP	bonus_showrack	;A0=*XY text, A1=*Anim list, A2.W=1Cnt, A3.W=2Cnt
+
+	move	@STATUS,a8
+	btst	0,a8
+	jrnz	bsr20
+	clr	a2
+bsr20	btst	1,a8
+	jrnz	bsr25
+	clr	a3
+bsr25
+	move	a1,*a13(BONUSLP),L
+	move	a2,*a13(BONUSC1)
+	move	a3,*a13(BONUSC2)
+
+	callr	print_xy
+
+	movk	10,a0
+	move	a0,@animdeath1
+	move	a0,@animdeath2
+
+	movi	hostxy_t,a8		;A8=*Next XY
+	clr	a9			;A9=Play1 cnt
+	clr	a10			;A10=Play2 cnt
+	clr	a11			;A11=P1/2 Death delay bits
+bsr40
+	move	*a13(BONUSC1),a0
+	cmp	a0,a9
+	jrlo	bsr70
+	move	@animdeath1,a0
+	jrle	bsr90
+	btst	0,a11
+	jrnz	bsr60
+	addk	1,a11			;Set bit 0
+	addk	14,a0			;Add delay
+bsr60	subk	1,a0
+	move	a0,@animdeath1
+	jruc	bsr90
+
+bsr70	addk	1,a9
+	move	@P1DATA+PSCORE,a0,L
+	addi	50,a0			;Add bonus
+	move	a0,@P1DATA+PSCORE,L
+;Do sound
+	move	*a8,a1			;Get X
+	jrn	bsr90
+	PUSH	a9,a10,a11
+	move	*a13(BONUSLP),a9,L
+	clr	a10
+	movi	animdeath1,a11
+	CREATE	0,bonus_anim
+	PULL	a9,a10,a11
+bsr90
+	move	*a13(BONUSC2),a0
+	cmp	a0,a10
+	jrlo	bsr120
+	move	@animdeath2,a0
+	jrle	bsr150
+	btst	1,a11
+	jrnz	bsr100
+	addk	2,a11			;Set bit 1
+	addk	14,a0			;Add delay
+bsr100	subk	1,a0
+	move	a0,@animdeath2
+	jruc	bsr150
+
+bsr120	addk	1,a10
+	move	@P2DATA+PSCORE,a0,L
+	addi	50,a0			;Add bonus
+	move	a0,@P2DATA+PSCORE,L
+;Do sound
+	move	*a8,a1			;Get X
+	jrn	bsr150
+	PUSH	a9,a10,a11
+	move	*a13(BONUSLP),a9,L
+	movi	192,a10			;X offset
+	movi	animdeath2,a11
+	CREATE	0,bonus_anim
+	PULL	a9,a10,a11
+
+bsr150
+	move	*a8,a0
+	jrn	bsr180
+	addk	32,a8			;Next XY
+bsr180	SLEEP	4
+	move	@animdeath1,a0		;Both done?
+	jrgt	bsr40
+	move	@animdeath2,a0
+	jrgt	bsr40
+
+	calla	ERASE_TXT
+
+	RETP
+
+
+********************************
+* Animation of a bonus item (Process)
+
+ SUBRP	bonus_anim		;A8=*XY, A9=*FRANIM table, A10=X offset
+				;A11=*animdeath var
+	move	*a8+,a0			;Get X
+	move	*a8+,a1			;Get Y
+	move	*a11,a2
+	move	a2,*a13(PDATA)		;Save death #
+	addk	1,a2			;+1
+	move	a2,*a11
+	add	a10,a0
+	sll	16,a0
+	sll	16,a1
+	move	*a9,a2,L
+	movi	220,a3
+	movi	DMAWNZ,a4
+	clr	a5
+	clr	a6
+	clr	a7
+	calla	BEGINOBJ
+	move	a9,*a13(PDATA+16),L
+bo40	movk	4,a1			;Do one, no sleep
+	JSRP	FRANIM
+	jrnc	bo60
+	move	*a13(PDATA+16),a9,L
+	jruc	bo40
+bo60	move	a0,a10
+bo80	SLEEP	1
+	move	*a11,a0			;Get death #
+	move	*a13(PDATA),a1
+	cmp	a0,a1
+	jrgt	bo90
+	dsj	a10,bo80
+	jruc	bo40
+bo90	move	a8,a0
+	calla	DELOBJ
+	DIE
+
+
+********************************
+* Dictator taunts players
+
+
+ SUBRP	dictator_taunt
+	movi	dictator_t,a8
+	jruc	anim_script
+
+
+dictator_t
+	.word	ASNEW
+	.long	dictnew_t
+
+	.word	ASNEW
+	.long	dictnew2_t
+
+	.word	ASLAB,50
+	.word	ASXY,1,0,-4
+	.word	ASXY,>10,0,-4
+	.word	ASXY,>11,0,-4
+	.word	ASXY,>20,0,-4
+	.word	ASXY,>21,0,-4
+	.word	ASSLP,1
+	.word	ASDSJ
+
+	.word	ASSLP,30
+
+	.word	ASNEW
+	.long	dictnew3_t
+
+	.word	ASTXT		;Say1
+	.long	dicttxtb1_st
+
+	.word	ASFRA
+	.long	dicteybl_l
+	.word	>10
+
+	.word	ASFRA
+	.long	dicteytw_l
+	.word	>11
+
+	.word	ASFRA
+	.long	dictmtk_l
+	.word	>20
+
+	.word	ASFRA
+	.long	dictmtk_l
+	.word	>21
+
+	.word	ASWAIT
+
+	.word	ASTXTK
+	.word	ASTXT		;Say2
+	.long	dicttxtb2_st
+
+	.word	ASFRA
+	.long	dicteybl_l
+	.word	>10
+
+	.word	ASFRA
+	.long	dicteytw_l
+	.word	>11
+
+	.word	ASFRA
+	.long	dictmtk_l
+	.word	>20
+
+	.word	ASFRA
+	.long	dictmtk_l
+	.word	>21
+
+	.word	ASLAB,5
+	.word	ASXY,>20,1,0
+	.word	ASSLP,1
+	.word	ASXY,>20,-1,0
+	.word	ASSLP,3
+	.word	ASDSJ
+	.word	ASWAIT
+
+	.word	ASTXTK
+	.word	ASTXT		;Say3
+	.long	dicttxtb3_st
+
+	.word	ASFRA
+	.long	dicteymd_l
+	.word	>10
+
+	.word	ASFRA
+	.long	dicteymd_l
+	.word	>11
+
+	.word	ASFRA
+	.long	dictmyell_l
+	.word	>20
+
+	.word	ASFRA
+	.long	dictmyell_l
+	.word	>21
+
+	.word	ASWAIT
+
+	.word	ASSLP,60*4
+	.word	ASTXTK
+	.word	-1		;End
+
+
+dictnew_t
+	.long	[67,69],WRINK2			;x,y,img name
+	.word	30,DMAWNZ+M_FLIPH+M_FLIPV,3	;pri,oflags,oid
+	.long	[326,69],WRINK2
+	.word	30,DMAWNZ+M_FLIPV,3
+	.long	[15,132],WRINK1
+	.word	30,DMAWNZ,3
+	.long	[370,132],WRINK1
+	.word	30,DMAWNZ+M_FLIPH,3
+	.long	[122,25],BIOSIGN
+	.word	30,DMAWNZ,3
+	.long	[273,25],BIOSIGN
+	.word	30,DMAWNZ+M_FLIPH,3
+	.word	-1				;End
+
+X	.set	145
+dictnew2_t
+	.long	[X+1,210],MADBOD
+	.word	50,DMAWNZ,1
+	.long	[X,210],MADBOD
+	.word	50,DMAWNZ+M_FLIPH,1
+	.long	[X+1,210],MADNECK
+	.word	50,DMAWNZ,1
+	.long	[X,210],MADNECK
+	.word	50,DMAWNZ+M_FLIPH,1
+	.long	[X+1,210],MADHAT
+	.word	50,DMAWNZ,1
+	.long	[X,210],MADHAT
+	.word	50,DMAWNZ+M_FLIPH,1
+	.long	[X+1,210],MADEYE1
+	.word	52,DMAWNZ,>10
+	.long	[X,210],MADEYE1
+	.word	52,DMAWNZ+M_FLIPH,>11
+	.long	[X+1,210],MTHSMILE1
+	.word	52,DMAWNZ,>20
+	.long	[X,210],MTHSMILE1
+	.word	52,DMAWNZ+M_FLIPH,>21
+	.word	-1
+
+dictnew3_t
+	.long	[220,18],BOON1
+	.word	40,DMAWNZ,2
+	.long	[350,18],BOON1
+	.word	40,DMAWNZ+M_FLIPH,2
+	.long	[290,76],BOON2
+	.word	40,DMAWNZ+M_FLIPH,2
+	.word	-1
+
+
+;Eyes
+dicteybl_l
+	.long	MADEYE1
+	.word	30
+	.long	MADEYE2
+	.word	8
+	.long	MADEYE1
+	.word	30
+	.long	MADEYE2
+	.word	8
+	.long	MADEYE1
+	.word	1
+	.long	0
+
+dicteytw_l
+	.long	MADEYE1
+	.word	20
+	.long	MADEYE2
+	.word	7
+	.long	MADEYE1
+	.word	15
+	.long	MADEYE2
+	.word	9
+	.long	MADEYE1
+	.word	25
+	.long	MADEYE2
+	.word	5
+	.long	MADEYE1
+	.word	1
+	.long	0
+
+dicteymd_l
+	.long	MADEYE1
+	.word	30
+	.long	MADEYE2
+	.word	20
+	.long	MADEYE3
+	.word	30
+	.long	MADEYE1
+	.word	1
+	.long	0
+
+;Mouth
+dictmtk_l
+	.long	MTHOPEN1
+	.word	10
+	.long	MTHOPEN2
+	.word	9
+	.long	MTHOPEN1
+	.word	10
+	.long	MTHSMILE1
+	.word	10
+	.long	MTHOPEN1
+	.word	12
+	.long	MTHSMILE1
+	.word	10
+	.long	MTHOPEN1
+	.word	10
+	.long	MTHOPEN2
+	.word	7
+	.long	MTHOPEN1
+	.word	10
+	.long	MTHOPEN2
+	.word	10
+	.long	MTHSMILE1
+	.word	8
+	.long	MTHOPEN1
+	.word	10
+	.long	MTHSMILE1
+	.word	6
+	.long	MTHOPEN1
+	.word	10
+	.long	MTHSMILE1
+	.word	8
+	.long	MTHOPEN1
+	.word	10
+	.long	MTHOPEN2
+	.word	7
+	.long	MTHSMILE1
+	.word	1
+	.long	0
+
+dictmyell_l
+	.long	MTHSMILE1
+	.word	15
+	.long	MTHSMILE2
+	.word	10
+	.long	MTHSMILE1
+	.word	30
+	.long	MTHOPEN1
+	.word	7
+	.long	MTHOPEN2
+	.word	7
+	.long	MTHOPEN3
+	.word	5
+	.long	MTHOPEN2
+	.word	7
+	.long	MTHOPEN1
+	.word	7
+	.long	MTHOPEN3
+	.word	6
+	.long	MTHOPEN2
+	.word	8
+	.long	MTHOPEN1
+	.word	7
+	.long	MTHOPEN2
+	.word	5
+	.long	MTHOPEN3
+	.word	6
+	.long	MTHOPEN2
+	.word	7
+	.long	MTHOPEN3
+	.word	6
+	.long	MTHOPEN2
+	.word	5
+	.long	MTHOPEN1
+	.word	7
+	.long	MTHSMILE1
+	.word	1
+	.long	0
+
+
+dicttxt1_st
+	.word	PRTF8,320,25,1			;Mode,X,Y,color
+	.byte	"YOU HAVE INVADED",0
+	.word	PRTF8,320,35,1
+	.byte	"MY PEACE LOVING",0
+	.word	PRTF8,320,45,1
+	.byte	"COUNTRY.",0
+	.word	-1
+dicttxt2_st
+	.word	PRTF8,320,25,1
+	.byte	"THIS ACT OF",0
+	.word	PRTF8,320,35,1
+	.byte	"AGRESSION WILL",0
+	.word	PRTF8,320,45,1
+	.byte	"NOT BE TOLERATED.",0
+	.word	-1
+dicttxt3_st
+	.word	PRTF8,320,25,1
+	.byte	"PURSUE ME AND",0
+	.word	PRTF8,320,35,1
+	.byte	"YOU SHALL SWIM IN",0
+	.word	PRTF8,320,45,1
+	.byte	"YOUR OWN BLOOD!!!",0
+	.word	-1
+
+dicttxtb1_st
+	.word	PRTF8,286,25,1
+	.byte	"YOU THINK YOU",0
+	.word	PRTF8,286,36,1
+	.byte	"ARE TOUGH",0
+	.word	PRTF8,286,47,1
+	.byte	"BECAUSE YOU HAVE",0
+	.word	PRTF8,286,58,1
+	.byte	"KILLED ORCUS?",0
+	.word	-1
+dicttxtb2_st
+	.word	PRTF8,286,25,1
+	.byte	"IT WAS ONLY A",0
+	.word	PRTF8,286,36,1
+	.byte	"TOY FOR THE",0
+	.word	PRTF8,286,47,1
+	.byte	"CHILDREN!",0
+	.word	-1
+dicttxtb3_st
+	.word	PRTF8,286,25,1
+	.byte	"MY REAL FORCES",0
+	.word	PRTF8,286,36,1
+	.byte	"WILL RIP YOUR",0
+	.word	PRTF8,286,47,1
+	.byte	"MEN APART!",0
+	.word	-1
+
+dicttxt4_st
+	.word	PRTF8,320,25,1
+	.byte	"YOU WILL DIE!",0
+	.word	PRTF8,320,35,1
+	.byte	"YOU WILL DIE!!",0
+	.word	PRTF8,320,45,1
+	.byte	"YOU WILL DIE!!!",0
+	.word	-1
+dicttxt5_st
+	.word	PRTF8,320,25,1
+	.byte	"MY FORCES WILL",0
+	.word	PRTF8,320,35,1
+	.byte	"CRUSH YOUR MEN!",0
+	.word	-1
+dicttxt6_st
+	.word	PRTF8,320,25,1
+	.byte	"THEY WILL DIE",0
+	.word	PRTF8,320,35,1
+	.byte	"BY THE THOUSANDS!",0
+	.word	-1
+dicttxt7_st
+	.word	PRTF8,320,25,1
+	.byte	"THE SANDS WILL BE",0
+	.word	PRTF8,320,35,1
+	.byte	"COVERED BY YOUR",0
+	.word	PRTF8,320,45,1
+	.byte	"BLOOD!",0
+	.word	-1
+dicttxt8_st
+	.word	PRTF8,320,25,1
+	.byte	"IF YOU CONTINUE,",0
+	.word	PRTF8,320,35,1
+	.byte	"THE HOSTAGES",0
+	.word	PRTF8,320,45,1
+	.byte	"WILL DIE!",0
+	.word	-1
+
+
+
+********************************
+* Run an animation script
+
+
+	.bss	animsfnum	,16	;# FRANIMs running
+	.bss	animslp		,32+16	;*Loop point, Loop cnt
+
+ASNEW	.equ	0		;AnimScript commands
+ASFRA	.equ	1		;
+ASSLP	.equ	2		;
+ASTXT	.equ	3		;
+ASTXTK	.equ	4		;
+ASWAIT	.equ	5		;
+ASXY	.equ	10		;
+ASLAB	.equ	20		;
+ASDSJ	.equ	21		;
+
+
+ SUBRP	anim_script		;A8=*Script
+
+	clr	a1
+	move	a1,@animsfnum
+
+ans50	move	*a8+,a1			;Get command
+	move	*a8+,a0,L		;Get data
+
+	cmpi	ASNEW,a1		;New objects
+	jrne	ans200
+	PUSH	a8
+	move	a0,a9
+ans100	move	*a9+,a1			;Get Y
+	move	*a9+,a0			;Get X
+	sll	16,a0
+	sll	16,a1
+	move	*a9+,a2,L		;*Image
+	move	*a9+,a3			;Pri
+	move	*a9+,a4			;Flags
+	move	*a9+,a5			;ID
+	addi	CLSDEAD,a5
+	clr	a6
+	clr	a7
+	calla	BEGINOBJ
+	move	*a9,a0
+	jrge	ans100
+	PULL	a8
+	jruc	ans50
+
+ans200	cmpi	ASFRA,a1		;FRANIM
+	jrne	ans300
+	move	@animsfnum,a2
+	addk	1,a2
+	move	a2,@animsfnum
+	move	a0,a9
+	move	*a8+,a10		;OID
+	CREATE	0,anims_franim
+	jruc	ans50
+
+ans300	cmpi	ASSLP,a1		;Sleep
+	jrne	ans400
+	subk	16,a8			;-WORD
+	calla	PRCSLP
+	jruc	ans50
+
+ans400	cmpi	ASTXT,a1		;Print text
+	jrne	ans500
+	PUSH	a8
+	callr	print_xy
+	PULL	a8
+	jruc	ans50
+
+ans500	cmpi	ASTXTK,a1		;Kill text
+	jrne	ans600
+	move	a8,-*a12,L		;Save in process stack
+	calla	ERASE_TXT
+;	movk	4,a11
+;	JSRP	text_shrink		;Sleeps
+	move	*a12+,a8,L
+	subk	32,a8			;-LONG
+	jruc	ans50
+
+ans600	cmpi	ASWAIT,a1		;Wait on FRANIMs
+	jrne	ans700
+	subk	32,a8			;-LONG
+ans620	SLEEP	2
+	move	@animsfnum,a1
+	jrnz	ans620
+	jruc	ans50
+
+ans700	cmpi	ASXY,a1			;New XY
+	jrne	ans1200
+	subk	16,a8			;-WORD
+	move	*a8+,a3
+	move	*a8+,a4
+	sll	16,a0
+	srl	16,a0
+	addi	CLSDEAD,a0
+	move	@OBJLST,a1,L
+ans720	callr	obj_find
+	jrz	ans50
+	move	*a1(OXPOS),a2		;New X
+	add	a3,a2
+	move	a2,*a1(OXPOS)
+	move	*a1(OYPOS),a2		;New Y
+	add	a4,a2
+	move	a2,*a1(OYPOS)
+	move	*a1,a1,L
+	jrz	ans50
+	jruc	ans720
+
+ans1200	cmpi	ASLAB,a1		;Set label
+	jrne	ans1300
+	subk	16,a8			;-WORD
+	move	a8,@animslp,L
+	move	a0,@animslp+32
+	jruc	ans50
+
+ans1300	cmpi	ASDSJ,a1		;Decrement and loop to label
+	jrne	ans2000
+	subk	32,a8			;-LONG
+	move	@animslp+32,a2
+	subk	1,a2
+	move	a2,@animslp+32
+	jrz	ans50
+	move	@animslp,a8,L		;Loop
+	jruc	ans50
+
+ans2000	SLEEP	1			;DEBUG
+	move	@SWITCH,a0
+	not	a0
+	jrz	ans2000
+
+	movi	CLSDEAD,a0		;>Delete objects
+	movi	>ff00,a1
+	calla	KILOBJ
+
+
+	RETP
+
+
+
+********************************
+* Animation of a part (Process)
+
+	APTRPD	ANFL,0		;*Franim list
+
+
+ SUBRP	anims_franim		;A9=*FRAN list, A10=OID
+
+	addi	CLSDEAD,a10
+	move	@OBJLST,a8,L		;>Find object
+anf100	move	*a8(OID),a0
+	cmp	a10,a0
+	jreq	anf300
+	move	*a8,a8,L
+	jrnz	anf100
+	jruc	anf700			;No match!
+
+anf300	move	a9,*a13(ANFL),L
+anf340	movk	1,a1			;Do one, no sleep
+	JSRP	FRANIM
+	jrnc	anf340
+	move	*a13(ANFL),a9,L		;Go to 1st
+;	jruc	anf340
+
+anf390
+;	move	a8,a0
+;	calla	DELOBJ
+anf700	move	@animsfnum,a2
+	subk	1,a2
+	move	a2,@animsfnum
+	DIE
+
+
+********************************
+* Find an object by OID
+
+ SUBRP	obj_find		;A0=OID, A1=*1st obj
+of20	move	*a1(OID),a2
+	cmp	a0,a2
+	jreq	of50
+	move	*a1,a1,L
+	jrnz	of20
+of50	move	a1,a1		;A1=*Obj or 0
+	rets			;Pass CC
+
+
+
+********************************
+* Calls DO_RACKUP
+
+	.ref	SCORE_FLAG
+	.ref	KILBGND,KILALL
+
+ SUBRP	rackcaller
+rc10	SLEEP	30
+	move	@SLDEBUG,a0
+	btst	0,a0
+	jrz	rc10
+	movk	1,a0
+	move	a0,@INTRO
+
+	calla	KILBGND
+	clr	a0
+	clr	a1
+	calla	KILALL
+	clr	a0
+	clr	a1
+	calla	KILOBJ
+	clr	a0
+	move	a0,@SCORE_FLAG
+	jruc	DO_RACKUP
+
+
+
+********************************
+* Extra junk!!!
+
+	.if	0
+
+;text objectives appear slowly
+;tag	MOVI	FADEDWN,A0		;LIST OF PALS TO FADE
+;	MOVK	3,A1			;RATE
+;	MOVI	30H,A2			;HOW MANY TIMES TO FADE
+;	MOVE	A2,@COUNT		
+;	CALLA	FADEOUT2		;DO IT
+
+	move	@OBJLST,a1,L		;>Tiles fly away
+rp200	move	*a1(OZPOS),a0
+	cmpi	200,a0
+	jrnz	rp230
+
+	calla	RANDOM
+	sll	32-18,a0
+	pushst
+	srl	32-18,a0
+	addi	>30000,a0
+	popst
+	jrc	rp210
+	neg	a0
+rp210	move	a0,*a1(OXVEL),L
+	calla	RANDOM
+	sll	32-18,a0
+	pushst
+	srl	32-18,a0
+	popst
+	jrc	rp220
+	neg	a0
+rp220	move	a0,*a1(OYVEL),L
+
+rp230	move	*a1,a1,L
+	jrnz	rp200
+
+
+	movi	statspal,a0		;>Cycle color loop
+	movk	31,a1
+	clr	a2
+rp45	move	a2,*a0+
+	addk	16,a2
+	dsj	a1,rp45
+
+	movi	60*4,a8
+	clr	a9
+	clr	a10
+
+rp50	move	@PCNT,a0
+	sll	32-2,a0
+	srl	32-2,a0
+	jrnz	rp70			;Skip cycle
+
+	movi	31*32*32+ 31*32+ 1,a0
+	movi	colorbuf,a1
+	move	a0,*a1+			;Set 1st color
+	movi	statspal,a2
+	movk	30,a4
+rp55	move	*a2,a3			;Get color #
+	addk	16,a3
+	movi	statscolor_t,a0
+	add	a3,a0
+	move	*a0(16),a5		;Next is end?
+	jrge	rp60
+	clr	a3			;Restart
+rp60	move	*a0+,*a1+
+	move	a3,*a2+
+	dsj	a4,rp55
+
+	callr	setpall0
+
+rp70	SLEEP	1			;Sleep 4??
+	dsj	a8,rp50
+
+
+********************************
+
+	.bss	scorebuf	,12*8	;11 char_s
+
+ SUBRP	bcdtoasc		;A0.L=BCD
+	PUSH	a1,a2,a3
+	movi	scorebuf+11*8,a1
+	clr	a2
+	movb	a2,*a1
+	movk	4,a3
+bcd5	dsj	a3,bcd10		;Convert BCD
+	movk	3,a3
+	movi	',',a2
+	subk	8,a1
+	movb	a2,*a1
+bcd10	movk	>f,a2
+	and	a0,a2
+	addi	'0',a2
+	subk	8,a1
+	movb	a2,*a1
+	srl	4,a0
+	jrne	bcd5
+	move	a1,a0
+	PULL	a1,a2,a3
+	rets
+
+
+********************************
+	.endif
+
+
+	.end
+
+

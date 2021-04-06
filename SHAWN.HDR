@@ -1,0 +1,599 @@
+********************************
+* Macro defines, include after mproc.equ
+* 11 June 91 SPL
+*.Last mod - 12/27/91 15:14
+
+SUBR	$macro	p1
+	.def	:p1:
+	.even
+:p1:
+	$end
+
+SUBRP	$macro	p1
+	.even
+:p1:
+	$end
+
+WORD	$macro	n,o
+:n:	.set	:o:*16
+	$end
+LONG	$macro	n,o
+:n:	.set	:o:*16
+	$end
+APTR	$macro	n,o
+:n:	.set	:o:*16
+	$end
+LABEL	$macro	n,o
+:n:	.set	:o:*16
+	$end
+
+WORDB	$macro	l,o,b
+:l:	.set	:o:*16+:b:
+	$end
+LONGB	$macro	l,o,b
+:l:	.set	:o:*16+:b:
+	$end
+APTRB	$macro	l,o,b
+:l:	.set	:o:*16+:b:
+	$end
+LABELB	$macro	l,o,b
+:l:	.set	:o:*16+:b:
+	$end
+
+WORDPD	$macro	n,o
+:n:	.set	:o:*16+PDATA
+	$end
+LONGPD	$macro	n,o
+:n:	.set	:o:*16+PDATA
+	$end
+APTRPD	$macro	n,o
+:n:	.set	:o:*16+PDATA
+	$end
+
+LW	$macro	l,w
+	.long	:l:
+	.word	:w:
+	$end
+LWW	$macro	l,w,w2
+	.long	:l:
+	.word	:w:,:w2:
+	$end
+LWWW	$macro	l,w,w2,w3
+	.long	:l:
+	.word	:w:,:w2:,:w3:
+	$end
+LWWWW	$macro	l,w,w2,w3,w4
+	.long	:l:
+	.word	:w:,:w2:,:w3:,:w4:
+	$end
+LWL	$macro	l,w,l2
+	.long	:l:
+	.word	:w:
+	.long	:l2:
+	$end
+LWLW	$macro	l,w,l2,w2
+	.long	:l:
+	.word	:w:
+	.long	:l2:
+	.word	:w2:
+	$end
+LWL0	$macro	l,w
+	.long	:l:
+	.word	:w:
+	.long	0
+	$end
+
+COLORW	$macro	r1,g1,b1,r2,g2,b2,r3,g3,b3,r4,g4,b4
+	.word	:r1:*32*32+:g1:*32+:b1:
+	$if	:r2:
+	.word	:r2:*32*32+:g2:*32+:b2:
+	$endif
+	$if	:r3:
+	.word	:r3:*32*32+:g3:*32+:b3:
+	$endif
+	$if	:r4:
+	.word	:r4:*32*32+:g4:*32+:b4:
+	$endif
+	$end
+
+* Push 1-10 registers onto the stack, overrides mproc.equ version
+PUSH	$macro	r1,r2,r3,r4,r5,r6,r7,r8,r9,r10
+	$if	:r10:
+	mmtm	sp,:r1:,:r2:,:r3:,:r4:,:r5:,:r6:,:r7:,:r8:,:r9:,:r10:
+	$else
+	$if	:r9:
+	mmtm	sp,:r1:,:r2:,:r3:,:r4:,:r5:,:r6:,:r7:,:r8:,:r9:
+	$else
+	$if	:r8:
+	mmtm	sp,:r1:,:r2:,:r3:,:r4:,:r5:,:r6:,:r7:,:r8:
+	$else
+	$if	:r7:
+	mmtm	sp,:r1:,:r2:,:r3:,:r4:,:r5:,:r6:,:r7:
+	$else
+	$if	:r6:
+	mmtm	sp,:r1:,:r2:,:r3:,:r4:,:r5:,:r6:
+	$else
+	$if	:r5:
+	mmtm	sp,:r1:,:r2:,:r3:,:r4:,:r5:
+	$else
+	$if	:r4:
+	mmtm	sp,:r1:,:r2:,:r3:,:r4:
+	$else
+	$if	:r3:
+	mmtm	sp,:r1:,:r2:,:r3:
+	$else
+	$if	:r2:
+	move	:r1:,-*sp,1
+	move	:r2:,-*sp,1
+	$else
+	move	:r1:,-*sp,1
+	$endif
+	$endif
+	$endif
+	$endif
+	$endif
+	$endif
+	$endif
+	$endif
+	$endif
+	$end
+
+* Pull registers off of the stack, ^
+PULL	$macro	r1,r2,r3,r4,r5,r6,r7,r8,r9,r10
+	$if	:r10:
+	mmfm	sp,:r1:,:r2:,:r3:,:r4:,:r5:,:r6:,:r7:,:r8:,:r9:,:r10:
+	$else
+	$if	:r9:
+	mmfm	sp,:r1:,:r2:,:r3:,:r4:,:r5:,:r6:,:r7:,:r8:,:r9:
+	$else
+	$if	:r8:
+	mmfm	sp,:r1:,:r2:,:r3:,:r4:,:r5:,:r6:,:r7:,:r8:
+	$else
+	$if	:r7:
+	mmfm	sp,:r1:,:r2:,:r3:,:r4:,:r5:,:r6:,:r7:
+	$else
+	$if	:r6:
+	mmfm	sp,:r1:,:r2:,:r3:,:r4:,:r5:,:r6:
+	$else
+	$if	:r5:
+	mmfm	sp,:r1:,:r2:,:r3:,:r4:,:r5:
+	$else
+	$if	:r4:
+	mmfm	sp,:r1:,:r2:,:r3:,:r4:
+	$else
+	$if	:r3:
+	mmfm	sp,:r1:,:r2:,:r3:
+	$else
+	$if	:r2:
+	move	*sp+,:r2:,1
+	move	*sp+,:r1:,1
+	$else
+	move	*sp+,:r1:,1
+	$endif
+	$endif
+	$endif
+	$endif
+	$endif
+	$endif
+	$endif
+	$endif
+	$endif
+	$end
+
+* Push low word of register on to stack, ^
+PUSHW	$macro	r1,r2,r3
+	$if	:r3:
+	ERROR:PUSHW
+	$else
+	$if	:r2:
+	move	:r1:,-*sp,0
+	move	:r2:,-*sp,0
+	$else
+	move	:r1:,-*sp,0
+	$endif
+	$endif
+	$end
+
+* Pull low word of register off of stack, ^
+PULLW	$macro	r1,r2,r3
+	$if	:r3:
+	ERROR:PULLW
+	$else
+	$if	:r2:
+	move	*sp+,:r2:,0
+	move	*sp+,:r1:,0
+	$else
+	move	*sp+,:r1:,0
+	$endif
+	$endif
+	$end
+
+* Push 1-5 registers onto the process stack, overrides mproc.equ version
+PUSHP	$macro	r1,r2,r3,r4,r5
+	$if	:r5:
+	mmtm	a12,:r1:,:r2:,:r3:,:r4:,:r5:
+	$else
+	$if	:r4:
+	mmtm	a12,:r1:,:r2:,:r3:,:r4:
+	$else
+	$if	:r3:
+	mmtm	a12,:r1:,:r2:,:r3:
+	$else
+	$if	:r2:
+	move	:r1:,-*a12,1
+	move	:r2:,-*a12,1
+	$else
+	move	:r1:,-*a12,1
+	$endif
+	$endif
+	$endif
+	$endif
+	$end
+* Pull 1-5 registers off the process stack, overrides mproc.equ version
+PULLP	$macro	r1,r2,r3,r4,r5
+	$if	:r5:
+	mmfm	a12,:r1:,:r2:,:r3:,:r4:,:r5:
+	$else
+	$if	:r4:
+	mmfm	a12,:r1:,:r2:,:r3:,:r4:
+	$else
+	$if	:r3:
+	mmfm	a12,:r1:,:r2:,:r3:
+	$else
+	$if	:r2:
+	move	*a12+,:r2:,1
+	move	*a12+,:r1:,1
+	$else
+	move	*a12+,:r1:,1
+	$endif
+	$endif
+	$endif
+	$endif
+	$end
+
+* And 1-32 to register. Trashes A14
+ANDK	$macro	r1,r2
+	movk	:r1:,a14
+	and	a14,:r2:
+	$end
+
+* Or 1-32 to register. Trashes A14
+ORK	$macro	r1,r2
+	movk	:r1:,a14
+	or	a14,:r2:
+	$end
+
+
+XYTXT	$macro	f,x,y,c,s
+	.word	:f:,:x:,:y:,:c:
+	.byte	:s:,0
+	$end
+XYNUM	$macro	f,x,y,c,p
+	.word	:f:,:x:,:y:,:c:
+	.long	:p:
+	$end
+XYOBJ	$macro	f,x,y,z,i
+	.word	:f:,:x:,:y:,:z:
+	.long	:i:
+	$end
+
+NOTINUSE $macro
+	.if	0
+	$end
+
+
+;RINR	$macro	a,b
+;	$if	(:b:-:a:)<33
+;	movk	:b:-:a:,a0
+;	$else
+;	movi	:b:-:a:,a0
+;	$endif
+;	callr	rndrng0
+;	$end
+
+* Prt_xy
+
+PRTF15	.equ	1		;Font15
+PRTF8	.equ	2		;Font8 MultiColor
+PRTDEC	.equ	4		;Decimal
+PRTBCD	.equ	8		;BCD (Long)
+PRTL	.equ	16		;Long data
+PRTOBJ	.equ	32		;Object format
+PRTE	.equ	>8000		;Stop on this header
+
+PRTF15B	.equ	0
+PRTF8B	.equ	1
+PRTDECB	.equ	2
+PRTBCDB	.equ	3
+PRTLB	.equ	4
+PRTOBJB	.equ	5
+
+
+********************************
+* Animation script defines/macros
+			;AnimScript commands
+AsNEW	.equ	0	;
+AsDEL	.equ	1*32	;ID
+AsDELM	.equ	2*32	;ID
+AsFRA	.equ	3*32	;ID or Last
+AsANI	.equ	4*32	;ID
+AsHIDE	.equ	5*32	;ID
+AsSHOW	.equ	6*32	;ID
+AsPAL	.equ	7*32	;ID or Last
+AsXY	.equ	8*32	;ID
+AsXYRNG	.equ	9*32	;ID or Last
+AsYA	.equ	10*32	;ID
+AsXYV	.equ	11*32	;ID
+AsXYVA	.equ	12*32	;ID
+AsXYV0	.equ	13*32	;Last
+AsZ	.equ	14*32	;ID
+AsBXY	.equ	15*32	;
+AsSLP	.equ	16*32	;
+AsSLP1	.equ	17*32	;
+AsSLPR	.equ	18*32	;
+AsWAIT	.equ	19*32	;
+AsTXT	.equ	20*32	;
+AsTXTR	.equ	21*32	;
+AsTXTK	.equ	22*32	;
+AsLAB	.equ	23*32	;
+AsLABR	.equ	24*32	;
+AsDSJ	.equ	25*32	;
+AsDSJS1	.equ	26*32	;
+AsJMP	.equ	27*32	;
+AsJMPR	.equ	28*32	;
+AsJMPEQ	.equ	29*32	;
+AsJMPNE	.equ	30*32	;
+AsRUN	.equ	31*32	;
+AsRUNI	.equ	32*32	;
+AsCRE	.equ	33*32	;
+AsKIL	.equ	34*32	;
+AsASM	.equ	35*32	;
+AsSND	.equ	36*32	;
+AsSNDD	.equ	37*32	;
+AsADDW	.equ	38*32	;
+AsADDWO	.equ	39*32	;Last
+AsADDLO	.equ	40*32	;Last
+AsADLVO	.equ	41*32	;Last
+AsSVRL	.equ	42*32	;
+AsSVRLT	.equ	43*32	;
+AsSVL	.equ	44*32	;
+
+ASITEMN	$macro	a,b,c,d,e,f
+	.long	:c:
+	.word	:a:,:b:,:d:,:e:,:f:
+	$end
+
+ASNEW	$macro	a
+	.word	AsNEW
+	.long	:a:
+	$end
+ASDEL	$macro	a
+	.word	AsDEL,:a:
+	$end
+ASDELM	$macro	a,b
+	.word	AsDELM,:a:,:b:
+	$end
+ASFRA	$macro	a,b,c
+	.word	AsFRA
+	.long	:a:
+	.word	:b:,:c:
+	$end
+ASANI	$macro	a,b
+	.word	AsANI
+	.long	:a:
+	.word	:b:
+	$end
+ASHIDE	$macro	a
+	.word	AsHIDE,:a:
+	$end
+ASSHOW	$macro	a
+	.word	AsSHOW,:a:
+	$end
+ASPAL	$macro	a
+	.word	AsPAL,:a:
+	$end
+ASXY	$macro	a,b,c,d
+	.word	AsXY,:a:,:b:,:c:,:d:
+	$end
+ASXYRNG	$macro	a,b,c,d,e,f
+	.word	AsXYRNG,:c:,:d:,:e:,:f:,:a:,:b:
+	$end
+ASYA	$macro	a,b,c
+	.word	AsYA,:a:,:b:,:c:
+	$end
+ASXYV	$macro	a,b,c,d
+	.word	AsXYV
+	.long	:c:,:d:
+	.word	:a:,:b:
+	$end
+ASXYVA	$macro	a,b,c,d
+	.word	AsXYVA
+	.long	:c:,:d:
+	.word	:a:,:b:
+	$end
+ASXYV0	$macro
+	.word	AsXYV0
+	$end
+ASZ	$macro	a,b,c
+	.word	AsZ,:a:,:b:,:c:
+	$end
+ASBXY	$macro	a,b
+	.word	AsBXY,:a:,:b:
+	$end
+ASSLP	$macro	a
+	.word	AsSLP,:a:
+	$end
+ASSLP1	$macro
+	.word	AsSLP1
+	$end
+ASSLPR	$macro	a,b
+	.word	AsSLPR,:a:,:b:
+	$end
+ASWAIT	$macro
+	.word	AsWAIT
+	$end
+ASTXT	$macro	a
+	.word	AsTXT
+	.long	:a:
+	$end
+ASTXTR	$macro	a
+	.word	AsTXTR
+	.long	:a:
+	$end
+ASTXTK	$macro
+	.word	AsTXTK
+	$end
+ASLAB	$macro	a
+	.word	AsLAB,:a:
+	$end
+ASLABR	$macro	a,b
+	.word	AsLABR,:a:,:b:
+	$end
+ASDSJ	$macro
+	.word	AsDSJ
+	$end
+ASDSJS1	$macro
+	.word	AsDSJS1
+	$end
+ASJMP	$macro	a
+	.word	AsJMP
+	.long	:a:
+	$end
+ASJMPR	$macro	a,b
+	.word	AsJMPR
+	.long	:b:
+	.word	:a:
+	$end
+ASJMPEQ	$macro	a,b,c
+	.word	AsJMPEQ
+	.long	:b:,:c:
+	.word	:a:
+	$end
+ASJMPNE	$macro	a,b,c
+	.word	AsJMPNE
+	.long	:b:,:c:
+	.word	:a:
+	$end
+ASRUN	$macro	a
+	.word	AsRUN
+	.long	:a:
+	$end
+ASRUNI	$macro	a,b
+	.word	AsRUNI
+	.long	:a:
+	.word	:b:
+	$end
+ASCRE	$macro	a,b
+	.word	AsCRE
+	.long	:a:,:b:
+	$end
+ASKIL	$macro	a,b
+	.word	AsKIL,:a:,:b:
+	$end
+ASASM	$macro
+	.word	AsASM
+	$end
+ASENDASM $macro
+	exgpc	a8
+	$end
+ASSND	$macro	a
+	.word	AsSND
+	.long	:a:
+	$end
+ASSNDD	$macro	a
+	.word	AsSNDD
+	.long	:a:
+	$end
+ASADDW	$macro	a,b
+	.word	AsADDW
+	.long	:b:
+	.word	:a:
+	$end
+ASADDWO	$macro	a,b
+	.word	AsADDWO,:a:,:b:
+	$end
+ASADDLO	$macro	a,b
+	.word	AsADDLO
+	.long	:a:
+	.word	:b:
+	$end
+ASADLVO	$macro	a
+	.word	AsADLVO,:a:
+	$end
+ASSVRL	$macro	a,b
+	.word	AsSVRL
+	.long	:a:,:b:
+	$end
+ASSVRLT	$macro	a
+	.word	AsSVRLT
+	.long	:a:
+	$end
+ASSVL	$macro	a
+	.word	AsSVL
+	.long	:a:
+	$end
+ASEND	$macro
+	.word	-32
+	$end
+
+
+********************************
+* Non dupe macros from sys\macros.hdr
+
+*Defs for symbols referenced from macros
+	.GLOBL	ERRORLOG
+
+* Swap contents of two registers that reside in same file
+SWAP	$MACRO R1,R2
+	XOR    :R1.S:,:R2.S:
+	XOR    :R2.S:,:R1.S:
+	XOR    :R1.S:,:R2.S:
+	$END
+
+* Test a register for zero
+TEST	$MACRO R1
+	MOVE	:R1.S:,:R1.S:
+	$END
+
+*EQUATES FOR XY COMPARES(MOTOLORA STYLE)
+JRXEQ	$MACRO	P1
+	JRXZ	P1.S
+	$END
+JRXNE	$MACRO	P1
+	JRXNZ	P1.S
+	$END
+JRXGE	$MACRO	P1
+	JRXNN	P1.S
+	$END
+JRXLT	$MACRO	P1
+	JRXN	P1.S
+	$END
+JRYEQ	$MACRO	P1
+	JRYZ	P1.S
+	$END
+JRYNE	$MACRO	P1
+	JRYNZ	P1.S
+	$END
+JRYGE	$MACRO	P1
+	JRYNN	P1.S
+	$END
+JRYLT	$MACRO	P1
+	JRYN	P1.S
+	$END
+
+*MAKE A SINGLE SOUND USING THE GSP SOUND PROCESSOR
+SOUND1	$MACRO SNDNUM
+	MOVI :SNDNUM:,A0
+	CALLA ONESND
+	$END
+
+*CALLERR - CALL THE ERROR LOG MACRO
+*REGS = # OF REGISTERS PUSHED ON THE STACK BY THIS SUBROUTINE
+CALLERR	$MACRO	NUM,REGS
+	MMTM	SP,A1,A2
+	MOVE	*SP((:REGS:+2)*20H),A1,L
+	MOVI	:NUM:,A2
+	CALLA	ERRORLOG	
+	MMFM	SP,A1,A2
+	$END
+

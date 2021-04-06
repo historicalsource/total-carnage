@@ -1,0 +1,2783 @@
+
+Article 8632 of rec.games.video:
+Path: iuvax!cica!tut.cis.ohio-state.edu!zaphod.mps.ohio-state.edu!uakari.primate.wisc.edu!aplcen!uunet!wang!tegra!phillips
+From: phillips@tegra.COM (Steve Phillips)
+Newsgroups: rec.games.video
+Subject: Re: Smash TV
+Message-ID: <1099@io.tegra.COM>
+Date: 5 Jul 90 15:47:55 GMT
+References: <477@beguine.UUCP>
+Reply-To: phillips@io.UUCP (Steve Phillips)
+Organization: Tegra-Varityper, Inc. Billerica, MA
+Lines: 24
+
+In article <10954@medusa.cs.purdue.edu> miyake@cs.purdue.EDU (Keith Miyake) writes:
+>We just got Smash TV here, and I have some questions about it
+>
+>Playing it now, moving and firing only occurs in 4 directions
+>(I've played it before, and I don't recall having noticed that before).
+>Is this some option?
+
+My guess is that it's an operator-selectable option, since
+4-way and 8-way joysticks typically use the same hardware.
+An 8-way joystick has four switches - you get the diagonal
+directions by using combinations of two switches (e.g
+you go northeast when the north and east switches are both
+depressed).
+
+So ask your local arcade operator - maybe he/she can just
+flip a switch for you somewhere...
+
+- Steve
+
+-- 
+============================================================================
+Steve Phillips                                         Tegra-Varityper, Inc.
+tegra!phillips@uunet.com                               Billerica, MA
+============================================================================
+
+
+Article 8633 of rec.games.video:
+Path: iuvax!rutgers!pyrnj!esquire!baumgart
+From: baumgart@esquire.dpw.com (Steve Baumgarten)
+Newsgroups: rec.games.video
+Subject: Re: Smash TV
+Keywords: Pleasure dome
+Message-ID: <2138@esquire.UUCP>
+Date: 5 Jul 90 12:22:04 GMT
+References: <479@beguine.UUCP> <13819@unix.SRI.COM>
+Sender: news@esquire.UUCP
+Reply-To: baumgart@esquire.dpw.com (Steve Baumgarten)
+Organization: Davis Polk & Wardwell
+Lines: 26
+In-reply-to: shimizu@unix.SRI.COM (Dan Shimizu)
+
+In article <13819@unix.SRI.COM>, shimizu@unix (Dan Shimizu) writes:
+>Has anyone been to the level when about a million keys appear?  This happended
+>the time we played, on the third (?) level and we grabbed a bunch of them.  Of
+>course, we STILL never found any secret rooms...
+>
+>I think it's about time to bring a pad and paper and map out this damn thing.
+>If anyone already knows it, please post!  Otherwise, if I get a chance, I'll
+>try.
+
+Yup.  Lots 'o' good those keys have done me...
+
+My feeling is that there's a "right" way to go through the rooms on a
+level, because if you just proceed, say, directly to the "money" room,
+you aren't given a chance to hit all the rooms on that level.  At
+least that's what I've found.  I thought that it might be possible to
+find the "pattern" (i.e., exit right, then up, then down, then ...)
+for each level and thereby hit every room.  But I haven't put a lot of
+time into that yet, so I don't know.
+
+"TOTAL CARNAGE...... I looooooove it!"
+
+--
+   Steve Baumgarten             | "New York... when civilization falls apart,
+   Davis Polk & Wardwell        |  remember, we were way ahead of you."
+   baumgart@esquire.dpw.com     | 
+   cmcl2!esquire!baumgart       |                           - David Letterman
+
+
+Article 8646 of rec.games.video:
+Path: iuvax!cica!tut.cis.ohio-state.edu!zaphod.mps.ohio-state.edu!uakari.primate.wisc.edu!ames!dftsrv!mimsy!whoville.umiacs.umd.edu!marks
+From: marks@whoville.umiacs.umd.edu (Mark A. Schleifer)
+Newsgroups: rec.games.video
+Subject: Re: Smash TV
+Summary: Switches
+Message-ID: <25332@mimsy.umd.edu>
+Date: 5 Jul 90 22:35:39 GMT
+References: <477@beguine.UUCP> <1099@io.tegra.COM>
+Sender: news@mimsy.umd.edu
+Reply-To: marks@umiacs.umd.edu (Mark A. Schleifer)
+Organization: UMIACS, Univ. of Maryland, College Park, MD 20742
+Lines: 29
+
+In article <1099@io.tegra.COM> phillips@io.UUCP (Steve Phillips) writes:
+>In article <10954@medusa.cs.purdue.edu> miyake@cs.purdue.EDU (Keith Miyake) writes:
+>>We just got Smash TV here, and I have some questions about it
+>>
+>>Playing it now, moving and firing only occurs in 4 directions
+>>(I've played it before, and I don't recall having noticed that before).
+>>Is this some option?
+>
+>My guess is that it's an operator-selectable option, since
+>4-way and 8-way joysticks typically use the same hardware.
+>An 8-way joystick has four switches - you get the diagonal
+>directions by using combinations of two switches (e.g
+>you go northeast when the north and east switches are both
+>depressed).
+
+  I work in an arcade and we have SMASH TV.  Our machine runs with
+all joysticks in 8 way mode.  There is a difficulty screen where you
+can adjust how hard the game is.  Ours is set to normal which allows
+8 way movement.  I suspect that the hard setting restricts it to 4 way
+movement.  You can ask the operator to set it back to normal (the 
+factory default) instead of harder (he had to of set it up this way).
+
+	- Mark Schleifer
+
+
+--
+Spoken: Mark A. Schleifer  
+Domain: marks@umiacs.umd.edu    UUCP: uunet!mimsy!umiacs!marks
+Phone: +1-301-403-8249  USPS: UMIACS, Univ. of Maryland, College Park, MD 20742
+
+
+Article 8654 of rec.games.video:
+Path: iuvax!cica!tut.cis.ohio-state.edu!zaphod.mps.ohio-state.edu!usc!hacgate!moon!grover
+From: grover@moon.HAC.COM (Dean Grover)
+Newsgroups: rec.games.video
+Subject: Smash TV wierdness
+Summary: possible bug ...
+Message-ID: <9325@hacgate.UUCP>
+Date: 6 Jul 90 01:35:28 GMT
+Sender: news@hacgate.UUCP
+Reply-To: grover@moon.hac.com (Dean Grover)
+Distribution: usa
+Organization: Hughes Aircraft Co., El Segundo, CA
+Lines: 22
+
+
+I was playing Smash TV the other day, and I think I've come across a bug.
+
+I had just died while fighting "scarface", and was getting ready to
+start my next game.  I let the timer expire (by accident) and the
+"NO WAY" voice sounded.  At the same time, I had inserted my quarter and
+pressed start.
+
+My game started over (as I had feared), but there was a 2x2 inch piece
+of scarface following me around on the screen !  He even fired his
+"eyes" at me and I died !  It was a very difficult room with the 
+green men coming at me, as well as the scarface mutant.  Needless to say
+I was quickly out of men, and I let the game end on purpose this time.
+
+When I started up again, all was normal.  Anyone else see this effect ?
+
+The search for the hidden rooms continues...
+
+  Dean Grover                            Mappy - The ultimate game of cat
+  Hughes Aircraft Company                        and mouse
+  adgrover@hac2arpa.hac.com or
+  grover@sed170.hac.com
+
+
+Article 8682 of rec.games.video:
+Path: iuvax!cica!tut.cis.ohio-state.edu!rutgers!pyrnj!esquire!baumgart
+From: baumgart@esquire.dpw.com (Steve Baumgarten)
+Newsgroups: rec.games.video
+Subject: Re: Smash TV wierdness
+Message-ID: <2150@esquire.UUCP>
+Date: 6 Jul 90 17:02:47 GMT
+References: <9325@hacgate.UUCP>
+Sender: news@esquire.UUCP
+Reply-To: baumgart@esquire.dpw.com (Steve Baumgarten)
+Distribution: usa
+Organization: Davis Polk & Wardwell
+Lines: 49
+In-reply-to: grover@moon.HAC.COM (Dean Grover)
+
+In article <9325@hacgate.UUCP>, grover@moon (Dean Grover) writes:
+>I had just died while fighting "scarface", and was getting ready to
+>start my next game.  I let the timer expire (by accident) and the
+>"NO WAY" voice sounded.  At the same time, I had inserted my quarter and
+>pressed start.
+>
+>My game started over (as I had feared), but there was a 2x2 inch piece
+>of scarface following me around on the screen !  He even fired his
+>"eyes" at me and I died !  It was a very difficult room with the 
+>green men coming at me, as well as the scarface mutant.  Needless to say
+>I was quickly out of men, and I let the game end on purpose this time.
+>
+>When I started up again, all was normal.  Anyone else see this effect ?
+
+Nope, but I've seen lot's 'o' bugs in other places.  A favorite (and
+recurring) one is where you're playing two-player and start a new
+round.  Normally both players walk past the studio audience to the
+playfield, but frequently you'll only see one, with the other just
+magically appearing after play has started.  I don't know what causes
+it, though.
+
+Rollergames looks to have a few bugs, too.  I've had the game just
+lock-up on me -- though play continued.  All the lights turned on and
+the game sounded the digitized bell you hear when you first turn on
+Williams pins.  Then all returned to normal.  There's another bug that
+involves "The Pit"; when you turn on ball locking and then hit the
+ball into the pit right away, it gets confused while it's doing its
+"Don't Flip!" routine.  But things get back to normal shortly.
+
+I can sympathize with the programmers for Rollergames, though.
+There's so much shit going on, I'm surprised things work at all.
+Rollergames has some of the most impressive playfield animation
+(lights and sounds) that I've ever seen (better even then F14 Tomcat).
+
+>The search for the hidden rooms continues...
+
+And continues...  I'm getting ready to call Williams and ask if they
+have a hint book or something...  :-)
+
+>  Dean Grover                            Mappy - The ultimate game of cat
+>  Hughes Aircraft Company                        and mouse
+>  adgrover@hac2arpa.hac.com or
+>  grover@sed170.hac.com
+
+--
+   Steve Baumgarten             | "New York... when civilization falls apart,
+   Davis Polk & Wardwell        |  remember, we were way ahead of you."
+   baumgart@esquire.dpw.com     | 
+   cmcl2!esquire!baumgart       |                           - David Letterman
+
+
+Article 9192 of rec.games.video:
+Path: iuvax!mailrus!news-server.csri.toronto.edu!utgpu!watserv1!maytag!watdragon!rose!ppanicolle
+From: ppanicolle@rose.uwaterloo.ca (Philippe Nicolle)
+Newsgroups: rec.games.video
+Subject: Re: Smash TV observations
+Keywords: Good Luck!  You'll need it!
+Message-ID: <1990Aug9.182140.15761@watdragon.waterloo.edu>
+Date: 9 Aug 90 18:21:40 GMT
+References: <26533@pasteur.Berkeley.EDU>
+Sender: daemon@watdragon.waterloo.edu (Owner of Many System Processes)
+Organization: University of Waterloo
+Lines: 67
+
+In article <26533@pasteur.Berkeley.EDU> terence@sim.berkeley.edu (Terence Chang) writes:
+>Anybody know what you're supposed to do on Map Three?  There are
+>rooms called "You may now enter key room #1!" as well as #2.  Also,
+>the overall view of Map Three shows areas labeled "?" in the lower
+>left and lower right corner of the map, but there don't seem to be
+>doors leading to those corners.
+>
+
+
+We warped !!!!!!
+
+After killing Mutoid, destroying the orbs, massacring the other besties we
+were in the room shown below (the arrows show our path).
+
+
+                            /+---------------------+
+                           / |                     |
+                          /  |                     |
+                         /   |                     |
+      +-----+-----+-----+    |                     |
+      |     |     |     |    |                     |
+      |     >     >     |    |                     |
+      |     |     ++    |    |  x                  |
++-----+--^--+-----++----+\   +-----+               |
+|     |     |     |     | \  |     |               |
+|     >     |     |     |  \ |     |               |
+|     |     |     |     |   \+---------------------+
++-----+-----+-----+-----+
+
+At that point my friend Shaun did the most brilliant (and lucky) thing.
+He headed for the point marked 'x'.  I was in deep trouble in the center just
+waiting for him to bail me out.  He was running from robots and
+Poof.....
+
+Everything went weird and at the top of the screen it said something like
+"Key activated, warp #3"  And next thing you know it was totaling the bonus for
+that level and we were off to battling those little snake weaklings
+(room after ScarFace).
+
+Of course we tried to do it again to get to the Pleasure Dome but
+no go.... ;-(
+
+>I also found an easy way to get 2 or 3 extra guys at the beginning of
+>the game (don't know if it's been posted before).  If you go through
+>the first screen (Arena 1) without firing a single shot, just using
+>shields only, then on the next screen (Collect powerups!), you will
+>get 2 or 3 extra guys and potentially 1 or 2 keys.
+>
+>Also, conscientiously avoiding the gifts seems to increase the number
+>of keys and extra men given out, but I'm not exactly sure how.
+
+I tried this.  Just got myself killed.  No extra keys, no free men.
+When do you guy's get your free men?  The first one for us appears
+in the Party/Treasure Room and the next one soon after....
+
+>
+>Terence Chang
+>-----
+>"People who get nostalgic      |  Terence Chang:
+> about childhood were          |    e-mail: !ucbvax!cory!terence 
+> obviously never children."    |            terence@cory.berkeley.edu
+>	  "Calvin and Hobbes"  |            or an acceptable facsimile thereof 
+
+Philippe Nicolle
+ppanicolle@rose.Waterloo.Edu
+ppanicolle@rose.UWaterloo.Ca
+uunet!watmath!rose!ppanicolle
+
+
+Article 9208 of rec.games.video:
+Path: iuvax!mailrus!usenet.ins.cwru.edu!tut.cis.ohio-state.edu!ucbvax!pasteur!cory!terence
+From: terence@cory.uucp (Terence Chang)
+Newsgroups: rec.games.video
+Subject: Re: Smash TV observations
+Keywords: Big money!  Big prizes!  I love it!
+Message-ID: <26918@pasteur.Berkeley.EDU>
+Date: 10 Aug 90 09:40:47 GMT
+References: <26533@pasteur.Berkeley.EDU>
+            <1990Aug9.182140.15761@watdragon.waterloo.edu>
+Sender: news@pasteur.Berkeley.EDU
+Reply-To: terence@cory.UUCP (Terence Chang)
+Lines: 32
+
+In article <1990Aug9.182140.15761@watdragon.waterloo.edu>
+ ppanicolle@rose.uwaterloo.ca (Philippe Nicolle) writes:
+>We warped !!!!!!
+
+Actually, this is disappointing in a way.  I thought only Nintendo-grade
+programmers would deign to hiding warps in arbitrary locations.
+
+> [method for getting free stuff on second screen]
+>I tried this.  Just got myself killed.  No extra keys, no free men.
+>When do you guy's get your free men?  The first one for us appears
+>in the Party/Treasure Room and the next one soon after....
+
+The difficulty setting on the machine here has changed, and this no
+longer works for me either.  It used to be 4 on a scale of 1 to 10
+(normal difficulty), now it feels like 6.  If you're on good terms with
+your arcade's operator, con him into setting it at 1 (extra easy)...
+it's a totally different game.
+
+Also, is there any significance to the deviations the game host makes
+from the usual speech?  I.e.,
+
+"Good luck, you'll need it!"   --->   "Total carnage, I love it!"
+"I'll buy that for a dollar!"  --->   "Good luck, you'll need it!"
+
+Does this mean there's a warp in Total Carnage?  Nah....
+
+Terence
+-----
+"People who get nostalgic      |  Terence Chang:
+ about childhood were          |    e-mail: !ucbvax!cory!terence 
+ obviously never children."    |            terence@cory.berkeley.edu
+	  "Calvin and Hobbes"  |            or an acceptable facsimile thereof 
+
+
+% Article 10672 of rec.games.video:
+Path: iuvax!noose.ecn.purdue.edu!samsung!zaphod.mps.ohio-state.edu!wuarchive!udel!rochester!rutgers!news-server.csri.toronto.edu!utgpu!watserv1!ssingh
+From: ssingh@watserv1.waterloo.edu (The Sanj - ISman (iceman))
+Newsgroups: rec.games.video
+Subject: Re: Smash TV
+Message-ID: <1990Oct19.060829.19339@watserv1.waterloo.edu>
+Date: 19 Oct 90 06:08:29 GMT
+References: <1990Oct16.112955.32052@wpi.WPI.EDU> <31298@netnews.upenn.edu>
+Organization: University of Waterloo
+Lines: 31
+
+In article <31298@netnews.upenn.edu> wking@eniac.seas.upenn.edu (Bill King) writes:
+>Has anyone out there had any luck with finding the pleasure domes on
+>Smash yet?  I have an idea but I'll need some time to try it out. Anyway,
+>has anyone else noticed that if you are the first one to play Smash when
+>it is turned on, it seems to be harder than if you play some other time?
+>I have played a couple games right when it has been turned on and I had
+>it kind of rough. Anyone else come up with anyhting interesting about
+>Smash in general?
+>Bill
+
+
+Yeah, after finishing the game with sweat dripping off me, I noticed some 
+interesting people who helped develop the game. One name that rang a bell
+was Mark Turmell. Was he a C-64 game programmer once? I believe he programmed
+for Sirius Software or Activision once. Is my memory correct. If so, it
+seems that there's still room for others with comparably humble beginnings
+to do well in the game industry...
+
+Any opinions about how an implementation of NARC or Smash TV would do for
+the IBM/compatible domain? Any ideas on how to program such beastly games
+so that they are actually playable? I've heard that NARC for the NES plays
+good. I haven't seen any discussion of it here. If you have anything
+to say on this stuff. I'd love to hear from you. Please email rather
+than post. If you want me to forward any responses, just ask...
+
+
+-- 
+"No one had the guts... until now..." -New Anti-Repression Convert (NARC  
+|-NARCotic $anjay [+] $ingh	ssingh@watserv1.[u]waterloo.{edu|cdn}/[ca] -|
+watserv1%rn alt.CENSORED: UW Provost sez "THINK SAFE THOUGHTS; AVOID NASTY ALT 
+FEEDS; & PROTECT YOURSELF: WEAR A CONDOM ON YOUR HEAD. Call x-2809. Let's Talk. 
+
+
+Article 10680 of rec.games.video:
+Path: iuvax!att!bu.edu!rpi!zaphod.mps.ohio-state.edu!wuarchive!uunet!mcsun!ukc!edcastle!aipna!davidg
+From: davidg@aipna.ed.ac.uk (David Green )
+Newsgroups: rec.games.video
+Subject: SMASH T-V T-SHIRT
+Message-ID: <3306@aipna.ed.ac.uk>
+Date: 19 Oct 90 11:57:13 GMT
+Organization: Dept. of AI, Edinburgh, UK
+Lines: 9
+
+Anyone out there own a Smash T-V T-Shirt ? (as advertised on the popular
+video game of the same name). If so, could you please tell me (a) if they're
+still available, (b) how much they cost, and (c) how easy it would be for me
+to order one here in the UK using Mastercard or something like that?
+
+(Sorry to bother you with all this technical stuff only I figure this is
+probably cheaper than a transatlantic phone call)
+
+Dave "I'd buy that for a dollar!" Green, DAI, Edinburgh, Scotland.
+
+Article 11288 of rec.games.video:
+Path: iuvax!news.cs.indiana.edu!att!linac!pacific.mps.ohio-state.edu!zaphod.mps.ohio-state.edu!usc!elroy.jpl.nasa.gov!ames!haven!adm!cmcl2!esquire!esquire.dpw.com
+From: baumgart@esquire.dpw.com (Steve Baumgarten)
+Newsgroups: rec.games.video
+Subject: Re: SMASH TV: Another Pleasure Dome theory
+Message-ID: <2805@esquire.dpw.com>
+Date: 13 Nov 90 12:50:54 GMT
+References: <1990Nov2.021506.20480@morrow.stanford.edu> <1990Nov11.001541.14869@hoss.unl.edu>
+Sender: news@DPW.COM
+Reply-To: baumgart@esquire.dpw.com (Steve Baumgarten)
+Organization: Davis Polk & Wardwell
+Lines: 27
+In-reply-to: greg@hoss.unl.edu (Hammer T. H.)
+
+In article <1990Nov11.001541.14869@hoss.unl.edu>, greg@hoss (Hammer T. H.) writes:
+>Has ANYONE asked Williams how to do it yet?
+
+No, but I'm getting real close.  There is, you know, someone who
+frequents this group and who worked at Williams (or possibly still
+works there).  But he's taken a vow of silence about this issue.
+Perhaps if we each forward one of those annoying chain letters that
+have been floating around the net to his mailbox...  :-)
+
+Anyone feel like calling Eugene Jarvis on behalf of this newsgroup and
+asking?  It's possibly less audacious than it sounds -- after all,
+Steve Ritchie includes a note with his Black Knight 2000 pinball
+machine that says (more or less) "call if you have questions about the
+machine or if you just want to chat... we're real proud of it".
+
+I've certainly run out of ideas (and quarters); to be honest, the
+game's lost some of its charm and novelty for me, and I don't play it
+as much as I used to.  Knowing the secret would definitely help revive
+my interest (at least I'd have something to play for again -- though
+trying to finish the second level on one quarter has been a pretty
+unattainable goal so far).
+
+--
+   Steve Baumgarten             | "New York... when civilization falls apart,
+   Davis Polk & Wardwell        |  remember, we were way ahead of you."
+   baumgart@esquire.dpw.com     | 
+   cmcl2!esquire!baumgart       |                           - David Letterman
+
+
+Article 11337 of rec.games.video:
+Path: iuvax!news.cs.indiana.edu!att!linac!pacific.mps.ohio-state.edu!zaphod.mps.ohio-state.edu!wuarchive!cs.utexas.edu!rutgers!pyrnj!esquire!esquire.dpw.com
+From: baumgart@esquire.dpw.com (Steve Baumgarten)
+Newsgroups: rec.games.video
+Subject: Re: SMASH TV: Another Pleasure Dome theory
+Message-ID: <2812@esquire.dpw.com>
+Date: 14 Nov 90 13:46:45 GMT
+References: <1990Nov2.021506.20480@morrow.stanford.edu> <1990Nov11.001541.14869@hoss.unl.edu> <2805@esquire.dpw.com> <12463@medusa.cs.purdue.edu>
+Sender: news@DPW.COM
+Reply-To: baumgart@esquire.dpw.com (Steve Baumgarten)
+Organization: Davis Polk & Wardwell
+Lines: 17
+In-reply-to: miyake@cs.purdue.EDU (Keith Miyake)
+
+In article <12463@medusa.cs.purdue.edu>, miyake@cs (Keith Miyake) writes:
+>Is there a more suitable number to call?  Anybody have a number that might
+>work?
+
+Well, there's always Chicago information.  How many "Jarvis, E"
+listings could there be?  :-)
+
+I don't know of any but the direct Williams number.  I have no idea
+what happens if you call and ask for Mr. Jarvis.  I assume you get
+transferred at least one step closer to him.  Maybe leaving an
+intriguing enough message would merit a callback.
+
+--
+   Steve Baumgarten             | "New York... when civilization falls apart,
+   Davis Polk & Wardwell        |  remember, we were way ahead of you."
+   baumgart@esquire.dpw.com     | 
+   cmcl2!esquire!baumgart       |                           - David Letterman
+
+
+Article 11351 of rec.games.video:
+Path: iuvax!cica!tut.cis.ohio-state.edu!pt.cs.cmu.edu!rochester!udel!haven!purdue!miyake
+From: miyake@cs.purdue.EDU (Keith Miyake)
+Newsgroups: rec.games.video
+Subject: Re: SMASH TV: Another Pleasure Dome theory
+Message-ID: <12463@medusa.cs.purdue.edu>
+Date: 13 Nov 90 18:57:10 GMT
+References: <1990Nov2.021506.20480@morrow.stanford.edu> <1990Nov11.001541.14869@hoss.unl.edu> <2805@esquire.dpw.com>
+Reply-To: miyake@cs.purdue.edu (Keith Miyake)
+Organization: Purdue University
+Lines: 21
+
+baumgart@esquire.dpw.com (Steve Baumgarten) writes:
+ >
+ >No, but I'm getting real close.  There is, you know, someone who
+ >frequents this group and who worked at Williams (or possibly still
+ >works there).  But he's taken a vow of silence about this issue.
+ >Perhaps if we each forward one of those annoying chain letters that
+ >have been floating around the net to his mailbox...  :-)
+ >
+ >Anyone feel like calling Eugene Jarvis on behalf of this newsgroup and
+ >asking?
+
+I would do it.  Lately the few times I've played I've just been doing the
+same things and not really finding anything new about the game. 
+
+Is there a more suitable number to call?  Anybody have a number that might
+work?
+
+
+Keith
+-- 
+miyake@cs.purdue.edu
+
+
+
+Article 11417 of rec.games.video:
+Path: iuvax!news.cs.indiana.edu!noose.ecn.purdue.edu!samsung!think.com!sdd.hp.com!elroy.jpl.nasa.gov!ncar!gatech!bloom-beacon!bu.edu!bbn.com!bbn!vvitiell
+From: vvitiell@cck.bbn.com (Vince Vitiello)
+Newsgroups: rec.games.video
+Subject: I want my SMASH TV!
+Keywords: SMASH TV, Boston, Where?
+Message-ID: <60929@bbn.BBN.COM>
+Date: 16 Nov 90 20:36:40 GMT
+Sender: news@bbn.com
+Reply-To: vvitiell@cck.bbn.com.UUCP (Vince Vitiello)
+Distribution: usa
+Organization: BBN Communications Corp, Cambridge MA
+Lines: 12
+
+
+Does anyone know where I might find an arcade (pub, or whatever)
+in the Boston area that has SMASH TV.  I haven't played for about
+a month and wanted to play a few games, but 1001 Games (on Mass. Ave
+near Harvard Square) no longer has the game!  This was the only
+SMASH TV game that I have seen in the area, but there must be
+many more?
+
+Thanks in advance,
+Vince
+
+vvitiello@bbn.com
+
+Article 12018 of rec.games.video:
+Path: iuvax!news.cs.indiana.edu!purdue!miyake
+From: miyake@cs.purdue.EDU (Keith Miyake)
+Newsgroups: rec.games.video
+Subject: Smash TV stuff
+Summary: hints
+Message-ID: <12725@medusa.cs.purdue.edu>
+Date: 11 Dec 90 20:11:30 GMT
+Reply-To: miyake@cs.purdue.edu (Contestant 2)
+Followup-To: rec.games.video
+Distribution: na
+Organization: Purdue University
+Lines: 22
+
+
+I just finished the game for the first time on 1 coin.  Played 2-player
+for most of the way (from the beginning of stage 2).
+
+Some more stuff that might be good to know.
+
+It seems that the secret warp #3 is a error recovery system.  I saw
+someone playing, move the machine out, and hit the side hard at the
+start of Scarface and activate the warp.  I've also saw the game reset
+after someone did that.  (this is not recommended: You lose bonus points,
+may lose the game, and may be thrown out of the arcade.)
+
+It seems that the way to beat Scarface is that you have to blow away his
+face AND destroy all the armor around his head.  This seems to hold for
+both times. (Check that you are doing damage == getting points).
+
+Like in Punch-Out, the Cobra Bosses' eyes change yellow before they attack.
+
+
+Keith
+-- 
+miyake@cs.purdue.edu
+
+
+Article 12036 of rec.games.video:
+Path: iuvax!news.cs.indiana.edu!samsung!usc!ucla-cs!ewa.cs.ucla.edu!michael
+From: michael@ewa.cs.ucla.edu (michael gersten)
+Newsgroups: rec.games.video
+Subject: Wanted: Hints for smash TV
+Message-ID: <1990Dec12.024305.5516@cs.ucla.edu>
+Date: 12 Dec 90 02:43:05 GMT
+Sender: news@cs.ucla.edu (Mr. News)
+Organization: UCLA, Computer Science Department
+Lines: 8
+Nntp-Posting-Host: ewa.cs.ucla.edu
+
+Does anyone have a complete collection of hints for
+smash TV? (Where/what are the warps, how
+do you use the doors that stay open longer,
+what are the secret rooms, how do
+you enter the key rooms, how do you enter the
+pleasure dome on the upgraded machines, etc).
+
+		Michael
+
+
+Article 12039 of rec.games.video:
+Path: iuvax!cica!tut.cis.ohio-state.edu!pacific.mps.ohio-state.edu!zaphod.mps.ohio-state.edu!swrinde!elroy.jpl.nasa.gov!usc!ucla-cs!ewa.cs.ucla.edu!michael
+From: michael@ewa.cs.ucla.edu (michael gersten)
+Newsgroups: rec.games.video
+Subject: Wanted: Hints for smash TV
+Message-ID: <1990Dec12.024101.5399@cs.ucla.edu>
+Date: 12 Dec 90 02:41:01 GMT
+Sender: news@cs.ucla.edu (Mr. News)
+Organization: UCLA Computer Science Department
+Lines: 5
+Nntp-Posting-Host: ewa.cs.ucla.edu
+
+
+Does anyone have a complete collection
+of hints for smash TV?
+
+		Michael
+
+
+Article 12052 of rec.games.video:
+Path: iuvax!cica!tut.cis.ohio-state.edu!VAX1.CC.UAKRON.EDU!v10121
+From: v10121@VAX1.CC.UAKRON.EDU (001.)
+Newsgroups: rec.games.video
+Subject: Re: Smash TV -- Pleasuredome
+Message-ID: <872@VAX1.CC.UAKRON.EDU>
+Date: 6 Dec 90 01:17:03 GMT
+References: <12663@medusa.cs.purdue.edu> <34113@netnews.upenn.edu>
+Reply-To: v10121@VAX1.CC.UAKRON.EDU (MICHAEL J STONITSCH  3460-475-001.)
+Distribution: na
+Organization: U of Akron Computer Center, Ohio
+Lines: 14
+
+
+  NEED lots of keys????
+
+  How many??  a couple thousand?? Sounds impossible to me.
+
+first of all the most I figure you could get is around 10 going through
+the game and another 50-60 in the bonus room...
+
+Ive gotten this many and yet was only allowed to got to room #2, like
+always....
+
+   Ill try to get no keys and see if it doesnt let me go to room #1,
+that should clinch it.
+later, SuperMike
+
+
+Article 12055 of rec.games.video:
+Path: iuvax!news.cs.indiana.edu!julius.cs.uiuc.edu!wuarchive!csus.edu!ucdavis!iris!kuan
+From: kuan@iris.ucdavis.edu (Frank [Who me?] Kuan)
+Newsgroups: rec.games.video
+Subject: Smash t.v.
+Message-ID: <9480@aggie.ucdavis.edu>
+Date: 12 Dec 90 21:18:26 GMT
+References: <megadrive> <strider> <hiryu> <10607@uhccux.uhcc.Hawaii.Edu> <9693@pasteur.Berkeley.EDU>
+Sender: usenet@aggie.ucdavis.edu
+Reply-To: kuan@iris.ucdavis.edu (Frank [Who me?] Kuan)
+Organization: U.C. Davis - Department of Electrical Engineering and Computer Science
+Lines: 16
+
+I finally finished Smash T.v. Now the question is, how do you
+get into the Pleasuredome? I know there was a thread recently
+on this topic, I've only seen the messages pertaining to which
+revision motherboard supports the pleasure dome. I missed the
+ones discussing how to get in it. If someone could refer me
+to those messages (if they exist), or email me a summary
+I'd appreciate it.
+
+I also have a few questions i was curious about:
+1. Does picking up the surprise packages have any relation to
+	the frequency which special weapons appear?
+2. what do keys do? I presume it has something to do with
+	finding the pleasure dome?
+3. How far have people gone in one player mode? I was able to
+	finish the game on 3$ playing with someone about my
+	ability level. 
+
+
+Article 12060 of rec.games.video:
+Path: iuvax!cica!news.cs.indiana.edu!msi.umn.edu!noc.MR.NET!gacvx2.gac.edu!gacvx2.gac.edu!scott
+From: scott@mcs-server.gac.edu (Scott Hess)
+Newsgroups: rec.games.video
+Subject: Re: Smash t.v.
+Message-ID: <SCOTT.90Dec12180429@mcs-server.gac.edu>
+Date: 12 Dec 90 23:04:29 GMT
+References: <megadrive> <strider> <hiryu> <10607@uhccux.uhcc.Hawaii.Edu>	<9693@pasteur.Berkeley.EDU> <9480@aggie.ucdavis.edu>
+Organization: Gustavus Adolphus College
+Lines: 20
+Nntp-Posting-Host: mcs-server.gac.edu
+In-reply-to: kuan@iris.ucdavis.edu's message of 12 Dec 90 21:18:26 GMTLines: 20
+
+In article <9480@aggie.ucdavis.edu> kuan@iris.ucdavis.edu (Frank [Who me?] Kuan) writes:
+   3. How far have people gone in one player mode? I was able to
+	   finish the game on 3$ playing with someone about my
+	   ability level. 
+
+I used to be able to get to Scarface, or the room preceeding him,
+fairly regularily by myself on a single quarter.  Now, though, I
+have more troubles, partially because our arcade brought
+Tetris back (580,000 on a quarter the other day, level 41, I think!),
+but also because it's gotten too easy.  Now, I'll sometimes get tanks
+in the third room on the first level, and almost always in the
+fourth one (pretty much regardless of which path I take).  This makes
+it way too hard, so I don't get so far anymore . . .
+--
+scott hess                      scott@gac.edu
+Independent NeXT Developer	GAC Undergrad
+<I still speak for nobody>
+"Tried anarchy, once.  Found it had too many constraints . . ."
+"Buy `Sweat 'n wit '2 Live Crew'`, a new weight loss program by
+Richard Simmons . . ."
+
+
+% 
+Article 12149 of rec.games.video:
+Path: iuvax!cica!sol.ctr.columbia.edu!emory!swrinde!zaphod.mps.ohio-state.edu!maverick.ksu.ksu.edu!hoss!hoss.unl.edu!greg
+From: greg@hoss.unl.edu (Hammer T. H.)
+Newsgroups: rec.games.video
+Subject: Re: Smash TV -- Pleasuredome
+Message-ID: <1990Dec14.225325.29624@hoss.unl.edu>
+Date: 14 Dec 90 22:53:25 GMT
+References: <12663@medusa.cs.purdue.edu> <34113@netnews.upenn.edu> <872@VAX1.CC.UAKRON.EDU>
+Sender: news@hoss.unl.edu (Network News Administer)
+Distribution: na
+Organization: University of Nebraska - Lincoln
+Lines: 40
+
+In <872@VAX1.CC.UAKRON.EDU> v10121@VAX1.CC.UAKRON.EDU (001.) writes:
+
+>  NEED lots of keys????
+
+>  How many??  a couple thousand?? Sounds impossible to me.
+
+>first of all the most I figure you could get is around 10 going through
+>the game and another 50-60 in the bonus room...
+
+>Ive gotten this many and yet was only allowed to got to room #2, like
+>always....
+
+>   Ill try to get no keys and see if it doesnt let me go to room #1,
+>that should clinch it.
+
+I think I might have just pieced something together.  On the v5.00 they
+have here (I told them to upgrade, but these people are SO SLOW to get
+anything fixed unless the machine is unplayable) I grabbed two keys, and
+then a whole bunch in "Share My Wealth" (bonus keys room).  I was able to
+get to Secret Room #2.  This seems to confirm my theory that, on that
+machine, the $ bonus rooms don't do jack s__t for your bonus.  Of all
+those keys I grabbed, nothing came of it.  I have a feeling the same is
+for all those presents they give you.  Immediate points, and that's all.
+
+On one instance was I able to get up to room #6, and I was ALTERNATING
+players each time I died, if no-one was joining in, and the timer had
+definitely run out.  There may be gratis keys for someone joining in so
+close to the end.
+
+And so far, I have not found the place where the image shown in the lower
+right corner of one of the demo's screens appears... you know, the one
+with the woman with the robotic arm and bared breasts?
+
+>later, SuperMike
+
+--
+     __  _____________  __
+     \ \_\ \__   __/ /_/ /    How many Sirius Cybernetics Corporation robots
+      \greg@hoss.unl.edu/       does it take to change a lightbulb?
+       \_\ \_\|_|/_/ /_/     "Lights... don't talk to me about lights."
+
+
+Article 12221 of rec.games.video:
+Path: bronze!cica!sol.ctr.columbia.edu!lll-winken!uunet!zaphod.mps.ohio-state.edu!usc!apple!amdahl!fai!ljb
+From: ljb@fai.UUCP (Larry Boggis FAI N.C.)
+Newsgroups: rec.games.video
+Subject: Help! Smash TV.
+Message-ID: <2950@fai.UUCP>
+Date: 18 Dec 90 19:44:07 GMT
+Reply-To: ljb@fai.fai.com (Larry Boggis FAI N.C.)
+Distribution: usa
+Organization: Fujitsu America, Inc
+Lines: 12
+
+A friend and I recently pumped a small fortune into this game only
+to finish without finding the 'pleasure dome'.  During the game (a
+few screens after killing mutoid man) we "warped" or something like
+that ... I remember seeing something like "???..level 3".  We managed
+to skip scarface all together.  Anyway we went on to finish the game
+... killing the host of Smash TV.  Is there a such thing as the 
+"Pleasure Dome"?  If so, how does one get there?  How and why did we warp?  
+
+Any information on this game would be most appreciated.
+(NOOOOO   WAAAAAAAAY  !!!!!!!) - mutoid man
+
+Thanks.
+
+Article 12992 of rec.games.video:
+Path: bronze!cica!news.cs.indiana.edu!noose.ecn.purdue.edu!samsung!zaphod.mps.ohio-state.edu!maverick.ksu.ksu.edu!hoss!hoss.unl.edu!greg
+From: greg@hoss.unl.edu (Lig Lury Jr.)
+Newsgroups: rec.games.video
+Subject: Smash TV v8.00 ***SPOILER?***
+Keywords: Spoiler
+Message-ID: <1991Jan25.002659.11252@hoss.unl.edu>
+Date: 25 Jan 91 00:26:59 GMT
+Sender: news@hoss.unl.edu (Network News Administer)
+Organization: University of Nebraska - Lincoln
+Lines: 127
+
+I am happy to say that the new ROM version of Smash TV has FINALLY arrived
+at the UN-L Student Union in Lincoln, NE.  There is something that will
+tell you if it is the new ROM without having to turn off the machine...
+the second room on the first level now says "COLLECT 10 KEYS", instead of
+just "COLLECT KEYS".
+
+begin STV spoiler.info
+
+Please, PLEASE, if you must follow-up to this message, include a control-L
+in the 0th column for others.  I am including extra blank lines, another
+control-L, and blank lines at the end of the message before the .signature
+for those out there whose newsreaders do not recognize control-L and do
+not pause, so they can look away for awhile, and after it is done
+scrolling, look back and not have anything spoiled for them if they
+accidentally started reading this message.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+I played it to the end ($3.75... I gotta improve that), taking the
+northernmost paths on every room, going for the $ rooms, and especially
+the "SHARE MY WEALTH" room which gives all those keys.  After the "COBRA
+DEATH" room, where you kill the two mechanical cobras, I was let into the
+room which was formerly entitled "YOU MAY NOW ENTER KEY ROOM #1".  This
+time it said "YOU ALMOST HAVE ENOUGH KEYS".
+
+After laying waste to all life forms and other entities in that room, I
+went through the only exit, the usual one to the right.  Instead of the
+name "YOU MAY NOW ENTER KEY ROOM #2" it said "YOU HAVE ENOUGH KEYS".  That
+room is very hard and VERY LONG.  I managed to pick up some keys in that
+room, but they seemed to appear after I had to put in another coin.
+
+After spending several quarters in that room, I finally killed everything,
+and then the doors opened.  That's right, plural.  One to the right as
+usual, and another going down.  From my experience with the previous
+version where taking the one to the right (which was the only one) led me
+to the MC room, entitled "EAT MY EYEBALLS", I instead took the south
+path...
+
+There I was presented with a room entitled "OUTER PLEASURE DOME AREA" and
+was presented with a large number of prizes, similar to the one after the
+MC... except that these prizes were WOMEN, not packages.  I didn't know
+how many groups of ladies I picked up, but just after the last batch
+appeared, some more (what I call) Star Trek rejects came out (they do come
+in green and red), who I had to kill.  Meanwhile the floor was pulsating
+with color (as was the room I just left while I went through the door).
+
+A door opened, this time to the north.  This is the only time I ever saw
+the machine open a door back to a room I had already been in.  Going
+through the door printed text, listing who I had killed, having the right
+keys, saying I was awsome (!) and telling me I was going to kill the evil
+MC, which I did, and was presented with the usual gifts afterward.
+
+Scoring proceeded as normal (including the second player's scoreboard
+saying that another player was needed, asking someone to join in (AT THE
+END OF THE GAME?!?)).  I think the women and other special $ rooms add to
+your score immediately, and don't get appended to the score that is given
+at the end of a level.
+
+The end game was the usual scrolling text, but it didn't say anything
+about my not doing everything; everything was praise.  It seemed to go by
+faster than usual, but that may be due to the lower amount of text it
+scrolled (i.e. not stating that I had not reached the highest level of
+competition).
+
+I still don't have any definite idea about what would have happened if I
+went east instead of south in that second room.  It may be random, only
+more game playing would answer that.
+
+Of what I saw, it didn't seem too exciting to me.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Now, how about splitting this newsgroup into rec.games.video.home,
+rec.games.video.arcade, and (if it those that gripe insist)
+rec.games.video.misc?  Kill files are not sufficient.
+
+(If you reply to this topic, change the subject line.)
+
+--
+///   ____   \\\ Lig Lury Jr. (greg@hoss.unl.edu)
+| |/ /    \ \| | Megadodo Publications
+ \\_( \==/ )_//  Megadodo House
+     \__\\/      Ursa Minor
+
+Article 13856 of rec.games.video:
+Path: bronze!news.cs.indiana.edu!news.nd.edu!spool.mu.edu!sdd.hp.com!usc!orion.oac.uci.edu!ucivax!bonnie.ics.uci.edu!lng
+From: lng@bonnie.ics.uci.edu (Lester Ng)
+Newsgroups: rec.games.video
+Subject: Help with Smash TV
+Message-ID: <27CAE083.16509@ics.uci.edu>
+Date: 26 Feb 91 22:26:11 GMT
+Article-I.D.: ics.27CAE083.16509
+Reply-To: lng@ics.uci.edu (Lester Ng)
+Organization: UC Irvine Department of ICS
+Lines: 9
+Nntp-Posting-Host: bonnie.ics.uci.edu
+
+
+One day a friend and I were playing a regular game of Smash TV when we got to
+"Mutoid Man".  We began to grab the nearest weapons and started blasting away
+at him, when the screen suddenly froze and to distort.  I thought it was a
+brown out, but the other video games around seem to be unaffected.  Then we
+noticed a message at the top of the screen.  It said we had activated "Warp 3"
+and sent us to the next confrontation.  We've tried to activate the "warp" on
+different occasions without success.  Does have a list or know how to activate
+these "warps"?
+
+
+Article 13862 of rec.games.video:
+Path: bronze!news.cs.indiana.edu!noose.ecn.purdue.edu!samsung!zaphod.mps.ohio-state.edu!maverick.ksu.ksu.edu!hoss!hoss.unl.edu!greg
+From: greg@hoss.unl.edu (Lig Lury Jr.)
+Newsgroups: rec.games.video
+Subject: Re: Help with Smash TV
+Message-ID: <1991Feb27.055920.4462@hoss.unl.edu>
+Date: 27 Feb 91 05:59:20 GMT
+References: <27CAE083.16509@ics.uci.edu>
+Sender: news@hoss.unl.edu (Network News Administer)
+Organization: University of Nebraska - Lincoln
+Lines: 33
+
+... lng@bonnie.ics.uci.edu (Lester Ng) writes:
+
+>One day a friend and I were playing a regular game of Smash TV when we got to
+>"Mutoid Man".  We began to grab the nearest weapons and started blasting away
+>at him, when the screen suddenly froze and to distort.  I thought it was a
+>brown out, but the other video games around seem to be unaffected.  Then we
+>noticed a message at the top of the screen.  It said we had activated "Warp 3"
+>and sent us to the next confrontation.  We've tried to activate the "warp" on
+>different occasions without success.  Does have a list or know how to activate
+>these "warps"?
+
+Yes.  Cause an error.  The warp is an error recovery device.  One poster
+remarked that he could cause the warp by effectively "tilting" the
+machine.  This however is not suggested, as it may affect whether you are
+allowed to play games at that location again.
+
+Its hard to believe that, after all the questions about the Pleasure Dome,
+when the version of the machine that has it comes out, no-one remarks
+about it.  Probably because it has all the signs of not what the game
+designer's had in mind originally.  Where were the ladies "promoting" you?
+Just a bunch of meaningless prizes.  Still no sign of the image that was
+depicted in the lower right corner of the demo screen:  woman with
+cybernetic (?) arm with breasts bared.  This may have been the reason the
+Pleasure Dome was held back so long, ala the reason one rarely gets to
+finish the game Dragon's Lair in your average arcade.
+
+Or did I get to the wrong room?
+
+--
+///   ____   \\\ Lig    \"I would like to say that it is a very great pleasure,
+| |/ /    \ \| |  Lury,   \ honor and privilege for me to open this bridge, but
+ \\_(\____/)_//    Jr.      \ I can't because my lying circuits are all out of
+     \_\\\/ greg@hoss.unl.edu \ commission.  I hate and despise you all."
+
+
+Article 13871 of rec.games.video:
+Path: bronze!sol.ctr.columbia.edu!zaphod.mps.ohio-state.edu!magnus.ircc.ohio-state.edu!tut.cis.ohio-state.edu!VAX1.CC.UAKRON.EDU!v30129
+From: v30129@VAX1.CC.UAKRON.EDU (080.)
+Newsgroups: rec.games.video
+Subject: Re: Help with Smash TV
+Message-ID: <1077@VAX1.CC.UAKRON.EDU>
+Date: 27 Feb 91 15:47:21 GMT
+References: <27CAE083.16509@ics.uci.edu> <1991Feb27.055920.4462@hoss.unl.edu>
+Reply-To: v30129@VAX1.CC.UAKRON.EDU (MICHAEL J STONITSCH  3460-475-080.)
+Organization: U of Akron Computer Center, Ohio
+Lines: 25
+
+
+
+  You got to the pleasure dome???
+
+  Id like to plant the guy at williams who pulled the little stunt of 
+not "allowing" players to get to the pleasure dome until they install
+the new version.  IVE YET TO SEE A GAME THAT HAS BEEN UPDATED. THUS I
+spit on Smash tv games(just joking), never play it. And I HATE WILLIAMS!
+I stinks, stinks...    
+
+  GIMME pitfighter.
+
+ As for pitfighter:  Being able to jam with TY, Ive started using BUZZ.
+The strength guy, and have made quick progress. Ive found the best
+attacks with buzz are to constantly roll and kick/punch. Dont attampt to
+grab(its easily done to 
+a few) since most are able to defend from it.
+You get torn up trying to continually body slam people. Simply roll into
+the enemy and fast/kick. kick works the best. Otherwise you get stunned
+and punched. Ive only made it to the 4th round with buzz, while I can
+consistantly get to the 10th round with ty and around 5 or 6 with kato.
+Kato takes mucho damage from chainman...(uhhgg) 
+Buzz jams in the grudge matches, knocks ty and kato right over.
+
+later, mike
+
+
+Article 14023 of rec.games.video:
+Path: bronze!news.cs.indiana.edu!purdue!miyake
+From: miyake@cs.purdue.EDU (Keith Miyake)
+Newsgroups: rec.games.video
+Subject: Smash TV Pleasuredome (was Re:  Yo!  Homeboys!)
+Message-ID: <13677@medusa.cs.purdue.edu>
+Date: 5 Mar 91 06:52:28 GMT
+References: <1991Mar4.220754.7969@umiami.ir.miami.edu>
+Reply-To: miyake@cs.purdue.edu (Contestant 2)
+Followup-To: rec.games.video
+Distribution: na
+Organization: Purdue University
+Lines: 22
+
+p8cl5r74@umiami.ir.miami.edu writes:
+ >Or perhaps the way to any of the secret key rooms or the Pleasure Dome in
+ >Smash TV?
+
+The way to get to the Pleasuredome is to get to the end of the game having
+picked up "enough" keys (and taking the right turn ?).  Unfortunately, on
+earlier versions of the game, you had to pick up an inordinate number of
+keys (which seem to occur randomly).
+
+This is supposed to have been fixed in version 8 of the ROMs.  You can
+see the version number when the machine starts up.  The upgrade should be
+free for registered owners from their distributors.  Unfortunately the
+people who run the arcade around here are idiots and don't seem to
+understand when I tell them.
+
+I haven't personally gotten to the Pleasuredome (don't play much anymore),
+haven't played anything later than version 5.
+
+
+Keith
+-- 
+miyake@cs.purdue.edu
+
+
+Article 14036 of rec.games.video:
+Path: bronze!sol.ctr.columbia.edu!spool.mu.edu!sdd.hp.com!zaphod.mps.ohio-state.edu!maverick.ksu.ksu.edu!hoss!hoss.unl.edu!greg
+From: greg@hoss.unl.edu (Lig Lury Jr.)
+Newsgroups: rec.games.video
+Subject: Re: Smash TV Pleasuredome (was Re: Yo! Homeboys!)
+Message-ID: <1991Mar05.155245.24663@hoss.unl.edu>
+Date: 5 Mar 91 15:52:45 GMT
+Article-I.D.: hoss.1991Mar05.155245.24663
+References: <1991Mar4.220754.7969@umiami.ir.miami.edu> <13677@medusa.cs.purdue.edu>
+Sender: news@hoss.unl.edu (Network News Administer)
+Distribution: na
+Organization: University of Nebraska - Lincoln
+Lines: 43
+
+... miyake@cs.purdue.EDU (Keith Miyake) writes:
+>... p8cl5r74@umiami.ir.miami.edu writes:
+
+>>Or perhaps the way to any of the secret key rooms or the Pleasure Dome in
+>>Smash TV?
+
+>The way to get to the Pleasuredome is to get to the end of the game having
+>picked up "enough" keys (and taking the right turn ?).
+
+I've never taken the straight path, but I'm not sinking any more money
+into it.
+
+>Unfortunately, on
+>earlier versions of the game, you had to pick up an inordinate number of
+>keys (which seem to occur randomly).
+
+No, on earlier versions of the game it was NOT POSSIBLE.
+
+>This is supposed to have been fixed in version 8 of the ROMs.  You can
+>see the version number when the machine starts up.  The upgrade should be
+>free for registered owners from their distributors.  Unfortunately the
+>people who run the arcade around here are idiots and don't seem to
+>understand when I tell them.
+
+Also in a ROM v8.00, the second room on the first level says "COLLECT 10
+KEYS" whereas previously I think it said just "COLLECT KEYS".
+
+>I haven't personally gotten to the Pleasuredome (don't play much anymore),
+>haven't played anything later than version 5.
+
+From what I saw of it, the Pleasure Dome wasn't that great.  I still think
+that what was originally intended went the way of the real ending to
+Dragon's Lair.
+
+>Keith
+>-- 
+>miyake@cs.purdue.edu
+
+--
+///   ____   \\\ Lig    \"I would like to say that it is a very great pleasure,
+| |/ /    \ \| |  Lury,   \ honor and privilege for me to open this bridge, but
+ \\_(\____/)_//    Jr.      \ I can't because my lying circuits are all out of
+     \_\\\/ greg@hoss.unl.edu \ commission.  I hate and despise you all."
+
+
+Article 14043 of rec.games.video:
+Path: bronze!sol.ctr.columbia.edu!zaphod.mps.ohio-state.edu!think.com!hsdndev!cmcl2!esquire!baumgart
+From: baumgart@esquire.dpw.com (Steve Baumgarten)
+Newsgroups: rec.games.video
+Subject: Re: Smash TV Pleasuredome (was Re: Yo! Homeboys!)
+Message-ID: <BAUMGART.91Mar5153746@esquire.esquire.dpw.com>
+Date: 5 Mar 91 20:37:46 GMT
+References: <1991Mar4.220754.7969@umiami.ir.miami.edu> <13677@medusa.cs.purdue.edu>
+	<1991Mar05.155245.24663@hoss.unl.edu>
+Sender: news@DPW.COM
+Distribution: na
+Organization: Davis Polk & Wardwell
+Lines: 21
+In-reply-to: greg@hoss.unl.edu's message of 5 Mar 91 15:52:45 GMT
+
+In article <1991Mar05.155245.24663@hoss.unl.edu> greg@hoss.unl.edu (Lig Lury Jr.) writes:
+
+   From what I saw of it, the Pleasure Dome wasn't that great.  I still think
+   that what was originally intended went the way of the real ending to
+   Dragon's Lair.
+
+When I found out that only rev. 8 ROMs had it, I was pissed.  Still a
+fun game, though.
+
+Too bad they didn't do what they did with BLASTER.  When you reached
+"Paradise" in BLASTER, you *knew it*.
+
+On the other hand, at least they *released* SMASH TV.  It seems like
+BLASTER got turned into about two dozen prototypes and then dropped.
+A shame, since I think it's one of Williams' best games.
+
+--
+   Steve Baumgarten             | "New York... when civilization falls apart,
+   Davis Polk & Wardwell        |  remember, we were way ahead of you."
+   baumgart@esquire.dpw.com     | 
+   cmcl2!esquire!baumgart       |                           - David Letterman
+
+
+Article 14091 of recg2mes.video:
+Path: bronze!sol.ctr.columbia.edu!emory!swrinde!cs.utexas.edu!uunet!maverick.ksu.ksu.edu!hoss!hoss.unl.edu!greg
+From: greg@hoss.unl.edu (Lig Lury Jr.)
+Newsgroups: rec.games.video
+Subject: Re: Smash TV Pleasuredome (was Re: Yo! Homeboys!)
+Message-ID: <1991Mar07.204138.26577@hoss.unl.edu>
+Date: 7 Mar 91 20:41:38 GMT
+References: <1991Mar4.220754.7969@umiami.ir.miami.edu> <13677@medusa.cs.purdue.edu> <1991Mar05.155245.24663@hoss.unl.edu> <339@mixcom.COM>
+Sender: news@hoss.unl.edu (Network News Administer)
+Distribution: na
+Organization: University of Nebraska - Lincoln
+Lines: 37
+
+... uuvvuu@mixcom.COM (Craig L. Stodolenak) writes:
+>... greg@hoss.unl.edu (Lig Lury Jr.) writes:
+
+>>From what I saw of it, the Pleasure Dome wasn't that great.  I still think
+>>that what was originally intended went the way of the real ending to
+>>Dragon's Lair.
+
+>I saw someone get to the ending of "Dragon's Lair" many years ago.  If I recall
+>correctly, Dirk defeats the dragon and whats-her-face jumps into his arms, they
+>look at the camera, and there's a fade-out.
+
+>Why, what's the _real_ ending?
+
+The real ending involved getting back out of the castle with the princess,
+while her outfit gets more and more damaged, revealing more and more.
+
+I think SMASH TV had a similar idea, from the image visible in the
+lower-left corner of the screen during the demo.  The one where they show
+the two contestants standing on a BIG pile of money, and a blue-tinted
+border showing some scenes from the game.  The image in the lower left
+corner did not appear in the game play at all.  Look closely and you'll
+see the connection between the games.
+
+>-- 
+>Craig L. Stodolenak           "The brainwashed do not know they are brain-
+>mixcom!craig%uunet.uu.net      washed."
+>craig@mixcom.com                                          -- Wendy O. Williams
+
+As it is in ROM v8.00, there isn't much "pleasure" to the Pleasure Dome.
+Big disappointment.
+
+
+--
+///   ____   \\\ Lig       \"What do you expect when you steal Disaster Area's
+| |/ /    \ \| |  Lury,     \ stunt ship."  "Hey, Marvin, what makes you think
+ \\_(\____/)_//    Jr.       \ this is Disaster Area's stunt ship?" "Simple.
+     \_\\\/ greg@hoss.unl.edu \ I parked it for him." -- Marvin & Zaphod
+
+
+Article 14121 of rec.games.video:
+Newsgroups: rec.games.video
+Path: bronze!sol.ctr.columbia.edu!zaphod.mps.ohio-state.edu!maverick.ksu.ksu.edu!hoss!hoss.unl.edu!greg
+From: greg@hoss.unl.edu (Lig Lury Jr.)
+Subject: Re: The Damn Smash TV Pleasuredome
+Message-ID: <1991Mar09.005723.12856@hoss.unl.edu>
+Sender: news@hoss.unl.edu (Network News Administer)
+Organization: University of Nebraska - Lincoln
+References: <1991Mar4.220754.7969@umiami.ir.miami.edu> <13677@medusa.cs.purdue.edu>  <1991Mar07.204546.27607@hoss.unl.edu> <1991Mar8.150231.8030@umiami.ir.miami.edu>
+Distribution: na
+Date: Sat, 09 Mar 91 00:57:23 GMT
+Lines: 63
+
+... p8cl5r74@umiami.ir.miami.edu (The Joker) writes:
+>... greg@hoss.unl.edu (Lig Lury Jr.) writes:
+
+>>It is still not possible to visit _all_ the rooms, but to get to the Dome,
+>>you need 10 keys.  Best way is to take the northern path that leads to the
+>>SHARE MY WEALTH room, which is a room that gives keys instead of presents.
+
+>>The only time I saw it go back through an old exit was when I left the
+>>Pleasure Dome.  Printed a bunch of words on the screen, then took me to
+>>kill the host.
+
+>OK...so, you need a lot of keys.  But could you be a little more specific as to
+>WHERE the Dome is?  Level 3?  Towards the end?  Can you get to any of the
+>secret rooms that show up as questions marks on the map?  I saw a guy get a
+>Secret-Room-Type message on Level 1, during the toaster/vcr/cash rack-up thing,
+>but I was too busy playing 720 next to it and didn't see how he did it.
+
+Possible spoilers follow:
+
+Near the end, after COBRA DEATH, the first room afterward would say "YOU
+ALMOST HAVE ENOUGH KEYS".  You go through yet another kill fest, then a
+door opens to the right.  If you made it (I haven't missed it, but then
+again I got to the end on the new ROM once, and haven't played it since)
+it should say "YOU HAVE ENOUGH KEYS" and go through a very long kill fest,
+where you will probably lose at least 5 lives, probably more.  Doors open
+east and south.  I went through the south door from my memories of the
+ending to v5.00 having the one to the east go right to the host.  Turns
+out to be a pulsating colors room called "OUTER PLEASURE DOME AREA".
+Picked up lots of posed women ala the $ rooms.  More "Star Trek Rejects"
+came out to die (red and green shirts) and the north door opened.  No
+others opened.
+                                     o
+The message you saw while playing 720  was the Warp message, which is an
+error recovery device.  I don't know if it still exists in v8.00, but it
+did in v5.00.  Sometimes though you can get errors that aren't trapped,
+such as walking through some walls, getting caught in a area that's fenced
+in over no floor, or fighting a frozen Scarface (face was blue).  (How
+many tickets does your 720 degrees start out with?  First time I played
+it, it gave 4 tickets, now all the ones I've seen start with only 1.)
+
+>In short, HOW DO YOU FIND THESE PLACES?!?  Does it matter if you die after
+>collecting the keys?  How is it done?  Where is the bloody Dome?!?  Or any
+>of the secret rooms?  I don't care if this is a spolier or not, I'm going 
+>MAD!
+
+I didn't seem to lose my keys with death, but it might have reduced them
+by one each death.  Strangely enough, after dying and putting in a
+quarter, I think I reliably saw one or two keys pop up not long after I
+hit the credit button.  I put in plenty of quarters during that what was
+called "Secret Key Room #2".
+
+>Sheesh...
+>Someone PUH-leez tell me....
+>Thanky much.
+
+I may be wrong on the precise names of the rooms, but I know you now need
+only 10 keys (as opposed to the infinity keys required on older machines).
+
+--
+///   ____   \\\ Lig       \"What do you expect when you steal Disaster Area's
+| |/ /    \ \| |  Lury,     \ stunt ship."  "Hey, Marvin, what makes you think
+ \\_(\____/)_//    Jr.       \ this is Disaster Area's stunt ship?" "Simple.
+     \_\\\/ greg@hoss.unl.edu \ I parked it for him." -- Marvin & Zaphod
+
+Article 14397 of rec.games.video:
+Path: bronze!sol.ctr.columbia.edu!lll-winken!elroy.jpl.nasa.gov!usc!cs.utexas.edu!asuvax!ncar!news.miami.edu!umiami!p8cl5r74
+From: p8cl5r74@umiami.ir.miami.edu (The Joker)
+Newsgroups: rec.games.video
+Subject: ARGH!  PLEASURE DOME HELP, PLEASE!
+Message-ID: <1991Mar17.210318.8087@umiami.ir.miami.edu>
+Date: 18 Mar 91 02:03:18 GMT
+Organization: Arkham Asylum
+Lines: 27
+
+OK.
+
+I'm going to try this just ONE MORE TIME.
+
+How EXACTLY do you get to a Key Room or The Pleasure Dome in Smash TV?
+
+If the version of the game does not have a PD, how do you get to a Key Room?
+
+Exactly.
+
+I do not care about Dragon's Lair and I would like to know where EXACTLY the
+rooms are.  I don't care if your friend did it once or that "you need some
+keys, I think".
+
+I wanna know.
+
+Really.
+
+Please.
+
+Thank you.
+
+-Jack-
+
+P.S. SOMEONE PLEASE TELL ME AND BE CLEAR!  Thanky much.
+
+My life, your world.....
+
+Article 14414 of rec.games.video:
+Path: bronze!sol.ctr.columbia.edu!zaphod.mps.ohio-state.edu!usc!snorkelwacker.mit.edu!bloom-picayune.mit.edu!athena.mit.edu!prune
+From: prune@athena.mit.edu (Paul B)
+Newsgroups: rec.games.video
+Subject: Smash TV: dome and key warps
+Keywords: smash tv
+Message-ID: <1991Mar18.175955.14059@athena.mit.edu>
+Date: 18 Mar 91 17:59:55 GMT
+Sender: prune@athena.mit.edu (Paul)
+Organization: Massachusetts Institute of Technology
+Lines: 6
+
+1.  How do you get to the pleasure dome in smash TV?
+2.  I stumbled into a secret key warp #3 once and ended up in this room that had no exits.  A few tanks came out but after that, we spent thirty minutes in this room with near-infinite shields and picking up money and trying to get out.  Eventually the ma
+chine was unplugged.  What are you supposed to do in this room?  
+3.  Any other weird smash TV things?  (I missed the discussion earlier)
+
+Would be greatly appreciated.
+Paul.
+
+
+Article 14417 of rec.games.video:
+Newsgroups: rec.games.video
+Path: bronze!sol.ctr.columbia.edu!zaphod.mps.ohio-state.edu!maverick.ksu.ksu.edu!hoss!hoss.unl.edu!greg
+From: greg@hoss.unl.edu (Lig Lury Jr.)
+Subject: Re: ARGH! PLEASURE DOME HELP, PLEASE! (arcade)
+Message-ID: <1991Mar18.203229.4231@hoss.unl.edu>
+Sender: news@hoss.unl.edu (Network News Administer)
+Organization: University of Nebraska - Lincoln
+References: <1991Mar17.210318.8087@umiami.ir.miami.edu>
+Date: Mon, 18 Mar 91 20:32:29 GMT
+Lines: 57
+
+... p8cl5r74@umiami.ir.miami.edu (The Joker) writes:
+
+>OK.
+>I'm going to try this just ONE MORE TIME.
+
+How many of you are thinking, "This is drugs... this is your brain on
+drugs... this is your brain with a side of bacon?"
+
+>How EXACTLY do you get to a Key Room or The Pleasure Dome in Smash TV?
+>If the version of the game does not have a PD, how do you get to a Key Room?
+>Exactly.
+
+Sheesh, how many times do we have to go through this?  I posted this just
+after I did it, and got ZERO response, and now we have all these people
+clamoring to find out how instead of trying it themselves.  Its very
+straightforward, and very difficult to miss.
+
+It is after Cobra Death.  You know, the two big mechanical snakes?  If
+after going through the door on the right after killing them you aren't
+taken to another room, but instead went to the thing with counting points
+(or taken to the host, I'm not sure on that, since I haven't failed to do
+it right in a long time), you won't get to the Dome.
+
+Warps are nothing but an error recovery device, and have little to no
+bearing on any particular movement or backdoor in the game.
+
+Collect (10) Keys:  This is how to tell if your game has the Dome or not.
+If after going through the first door the room is entitled "COLLECT 10
+KEYS" then you are on a Domed machine.  If it says anything else, no
+Dome.
+
+Either way, keys are important, and the most profitable paths are always
+to the North.  On the last level, taking the North path will take you to a
+room full of keys.  I suggest you do so, and grab as many as you can.
+
+After the Cobras, when going through the door, an old machine will say
+something like "You may enter key room #1."  A new one will say "You
+almost have enough keys."  The next one will be "You may enter key room
+#2" or "You have enough keys" or something if you don't have enough.
+Don't ask me, I've always (i.e. once) had enough keys.  This room is the
+most difficult, with the longest duration.
+
+After that, I saw two exits, one to the East, the other South.  I chose
+the South one and was presented with a pulsating room with lots of women
+as prizes instead of gifts or keys.  I don't know what would have happened
+if I took the East exit, but I suspect from other games on older machines
+that it would take me to the host.
+
+>-Jack-
+
+That specific enough for you?
+
+--
+///   ____   \\\ "I was going flat out and this thing just strolled past me,
+| |/ /    \ \| |  star drive hardly ticking over.  Ten seconds later it smashed
+ \\_(\____/)_//   straight into the third moon of Jaglan Beta.  Amazing-looking
+ship \_\\\/ though.  Looks like a fish, moves like a fish.  Steers like a cow."
+
+
+Article 14418 of rec.games.video:
+Newsgroups: rec.games.video
+Path: bronze!sol.ctr.columbia.edu!zaphod.mps.ohio-state.edu!maverick.ksu.ksu.edu!hoss!hoss.unl.edu!greg
+From: greg@hoss.unl.edu (Lig Lury Jr.)
+Subject: Re: Smash TV: dome and key warps
+Message-ID: <1991Mar18.203836.6152@hoss.unl.edu>
+Keywords: smash tv
+Sender: news@hoss.unl.edu (Network News Administer)
+Organization: University of Nebraska - Lincoln
+References: <1991Mar18.175955.14059@athena.mit.edu>
+Date: Mon, 18 Mar 91 20:38:36 GMT
+Lines: 35
+
+... prune@athena.mit.edu (Paul B) writes:
+
+>1.  How do you get to the pleasure dome in smash TV?
+
+See message I posted just seconds ago.
+
+>2.  I stumbled into a secret key warp #3 once and ended up in this room that had no exits.  A few tanks came out but after that, we spent thirty minutes in this room with near-infinite shields and picking up money and trying to get out.  Eventually the m
+achine was unplugged.  What are you supposed to do in this room?  
+
+Hit return sometime, or set your right margin in vi or something!  People
+don't like it when you have one continuous line.  Hit return before you
+reach the edge of the screen.  Yes, this does require you to look at the
+screen instead of your hands. :-)
+
+Anyway, the Secret Key Warps are nothing but error recovery devices.
+Unfortunately, you seem to have hit an error that didn't recover!  I would
+have suggested running along all the walls with a shield, just in case an
+enemy phased through a wall, like they occasionally do.  Orbs are
+notorious for doing this.  However, I doubt you'll get a chance to repeat
+this, just as I have been unable to recreate the circumstances which
+presented me with Scarface being "frozen" (i.e. the color palettes got
+mixed up and instead of being green, he was blue, with high contrast
+between shades).
+
+>3.  Any other weird smash TV things?  (I missed the discussion earlier)
+
+See previous paragraph.
+
+>Would be greatly appreciated.
+>Paul.
+
+--
+///   ____   \\\ "I was going flat out and this thing just strolled past me,
+| |/ /    \ \| |  star drive hardly ticking over.  Ten seconds later it smashed
+ \\_(\____/)_//   straight into the third moon of Jaglan Beta.  Amazing-looking
+ship \_\\\/ though.  Looks like a fish, moves like a fish.  Steers like a cow."
+
+Article 15412 of rec.games.video:
+Path: bronze!sol.ctr.columbia.edu!zaphod.mps.ohio-state.edu!mips!apple!tahoe!unssun!dfr
+From: dfr@unssun.nevada.edu (D. F. Robinson)
+Newsgroups: rec.games.video
+Subject: Smash TV
+Message-ID: <6089@tahoe.unr.edu>
+Date: 19 Apr 91 08:00:04 GMT
+References: <SUDEEP.91Apr18112452@saturn.arc.UUCP>
+Sender: news@tahoe.unr.edu
+Reply-To: dfr@unssun.UUCP (D. F. Robinson)
+Distribution: usa
+Organization: University of Nevada-Reno
+Lines: 7
+
+The Student Union arcade here just put in a game called Smash TV. I was 
+wondering if any one out there has some tips, or can tell me where the room
+is where you become a Grand Champion.  I finished the game but it said 
+something about you are not a true champion because we didn't find this room.
+Any clues or spoilers would be appreciated.  Thanks in advance.
+
+Darin
+
+
+Article 15464 of rec.games.video:
+Path: bronze!sol.ctr.columbia.edu!emory!ogicse!intelhf!reed!rbrewer
+From: rbrewer@reed.UUCP (Robert S. Brewer)
+Newsgroups: rec.games.video
+Subject: Smash TV Secret Rooms?
+Message-ID: <16343@reed.UUCP>
+Date: 20 Apr 91 21:09:03 GMT
+Organization: Reed College, Portland OR
+Lines: 8
+
+I have completed Smash TV (coin-op), and at the end it says that there are
+secret rooms on every level that you have to visit with 10 keys to become a
+master warrior or whatever. Where are these rooms? Is there some trick to open
+secret doors to them? Any help is appreciated. You can follow-up or email me.
+-- 
+Robert S. Brewer | Internet: rbrewer@reed.edu or brewer@wri.com
+   Student at    | UUCP: tektronix!reed!rbrewer, BITNET: RBREWER@REED
+  Reed College   | Two wrongs don't make a right. Unless you're an NOR gate.  
+
+Article 989 of rec.games.video.arcade:
+Path: bronze!sol.ctr.columbia.edu!spool.mu.edu!think.com!zaphod.mps.ohio-state.edu!cis.ohio-state.edu!pacific.mps.ohio-state.edu!linac!att!rutgers!mcnc!beguine!danielg
+From: danielg@med.unc.edu (Daniel Gene Sinclair)
+Newsgroups: rec.games.video.arcade
+Subject: I just tried Smash(ed?) TV...
+Message-ID: <3847@beguine.UUCP>
+Date: 21 May 91 13:54:18 GMT
+Article-I.D.: beguine.3847
+Sender: usenet@beguine.UUCP
+Organization: UNC-CH School of Medicine
+Lines: 21
+Originator: danielg@earl
+
+I haven't spent any money in an arcade for a long time, mostly because
+most of the games are the Ninja/kick-the-guy-in-the-face/Streetfighter
+type (ho-hum).  However, on reading about SmashTV in this group, I thought
+I'd give it a try, esp. since I'm an old Williams fan (Stargate and Joust,
+my fav's).
+
+Well, I spent a whole dollar on Smash TV, and I love it!  However, I only
+got to the third level (and not on one quarter either ;).  Any of you
+officianados want to give me your strategies?  Anything I should look for,
+or make a point of killing/picking up/etc?  I'd like to master this game
+with a little less money.
+
+Thanks in advance,
+
+danielg
+
+-- 
+<>< - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  |
+><>     He who has the Son has [eternal] life,                     ==+== 
+<><     and he who does not have the Son does not have life.         | 
+<>< - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  |
+
+
+Article 1001 of rec.games.video.arcade:
+Path: bronze!sol.ctr.columbia.edu!spool.mu.edu!cs.umn.edu!talon.UCS.ORST.EDU!orstcs!prism!tannerr
+From: tannerr@prism.cs.orst.edu (Ryan Tanner)
+Newsgroups: rec.games.video.arcade
+Subject: Re: Smash TV
+Keywords: Pleausre Dome
+Message-ID: <1991May22.035004.3876@lynx.CS.ORST.EDU>
+Date: 22 May 91 03:50:04 GMT
+Article-I.D.: lynx.1991May22.035004.3876
+References: <1991May20.181720.16973@agate.berkeley.edu> <1991May20.191150.22284@agate.berkeley.edu>
+Sender: @lynx.CS.ORST.EDU
+Distribution: ca
+Organization: Oregon State University, Computer Science Dept
+Lines: 25
+Nntp-Posting-Host: prism.cs.orst.edu
+
+In <1991May20.191150.22284@agate.berkeley.edu> chi@tempest.Berkeley.EDU (Albert S. Chi) writes:
+
+>In article <1991May20.181720.16973> bjue@ocf.berkeley.edu (Brian Jue) writes:
+>>
+>>       To everyone at Cal.  The Smash TV at the ASUC, what version is it?
+>>Are we playing in vain, never to reach the Pleasure Dome at the end?  I've
+>>seen people play to the cobras and die...
+>>
+>I'm taking an educated guess here, but I don't think the machine in the ASUC
+>Underground is "Dome-able." I believe one of the criteria is the message
+>"Collect x Keys," where x is a finite number (10?).  When I saw a key
+>message, it only said, "Collect Keys," implying an infinite number of keys
+>are needed for the Dome.  Am I right on this?
+
+>--------------------------------------------
+>| Plain and simple.  This is my signature. |      Albert Chi
+>| A famous quote will appear here later.   |      chi@headcrash.berkeley.edu
+>--------------------------------------------
+
+If you really want to find out, find the switch on the top of the until.
+Turn it off for a few seconds and then on again.  After the ROM check,
+it will print the ROM revisioni at the top of the screen.  Hope
+this helps.
+
+Ryan (tannerr@prism.cs.orst.edu)
+
+
+Article 1014 of rec.games.video.arcade:
+Path: bronze!sol.ctr.columbia.edu!zaphod.mps.ohio-state.edu!think.com!hsdndev!cmcl2!esquire!baumgart
+From: baumgart@esquire.dpw.com (Steve Baumgarten)
+Newsgroups: rec.games.video.arcade
+Subject: Re: I just tried Smash(ed?) TV...
+Message-ID: <BAUMGART.91May22180232@info7.esquire.dpw.com>
+Date: 22 May 91 22:02:32 GMT
+References: <3847@beguine.UUCP>
+Sender: news@DPW.COM
+Organization: Davis Polk & Wardwell
+Lines: 49
+In-reply-to: danielg@med.unc.edu's message of 21 May 91 13:54:18 GMT
+
+In article <3847@beguine.UUCP> danielg@med.unc.edu (Daniel Gene Sinclair) writes:
+
+   Well, I spent a whole dollar on Smash TV, and I love it!  However, I only
+   got to the third level (and not on one quarter either ;).  Any of you
+   officianados want to give me your strategies?  Anything I should look for,
+   or make a point of killing/picking up/etc?  I'd like to master this game
+   with a little less money.
+
+Pick up keys; if your game displays "Collect 10 Keys" when you leave
+the first room, it has a recent ROM rev. and thus the fabled "Pleasure
+Dome".  I've yet to see it, but it's sure got to be better than the
+older ROMs' ripoff ending.
+
+Whenever you see an icon of a free man, pick it up.  Took me a while
+to figure this out.
+
+The bosses are best handled by staying above them; I suck on the snake
+round, so don't ask me what to do there (beyond just putting more
+quarters in).
+
+If you're on the third wave after only a buck, you're doing much
+better than I did when I first started.  On the higher levels, be sure
+to stay near the middle of the floor and don't miss a weapon or you
+are surely dead.  Don't let them back you into a corner (unless you're
+playing two-player, in which case the corners are OK).
+
+If you have a choice of shooting a green thug or a pink thug, shoot
+the pink thug, since he's faster and smarter.  The greenies will
+generally leave you alone unless they see you; the pink guys head
+straight for you.
+
+The money and prizes are totally meaningless, as is your score, which
+is always pretty much related to what wave you're on.  Thanks for this
+exciting innovation, Williams...
+
+I still play every now and then, but I get frustrated by the end of
+the third round, when billions of thugs pour out of doors non-stop.
+At some point SMASH gets boring for me, where ROBOTRON never did.  I
+don't know why, exactly, but I don't have the same desire to master
+the game that I did with ROBOTRON.
+
+The most effective strategy, though, is to have a handful of quarters
+always at the ready...
+
+--
+   Steve Baumgarten             | "New York... when civilization falls apart,
+   Davis Polk & Wardwell        |  remember, we were way ahead of you."
+   baumgart@esquire.dpw.com     | 
+   cmcl2!esquire!baumgart       |                           - David Letterman
+
+
+Article 1016 of rec.games.video.arcade:
+Newsgroups: rec.games.video.arcade
+Path: bronze!news.cs.indiana.edu!ux1.cso.uiuc.edu!uxa.cso.uiuc.edu!tbm19061
+From: tbm19061@uxa.cso.uiuc.edu (Thomas B MacIukenas)
+Subject: Re: I just tried Smash(ed?) TV...
+Message-ID: <1991May23.012646.27310@ux1.cso.uiuc.edu>
+Sender: usenet@ux1.cso.uiuc.edu (News)
+Organization: University of Illinois at Urbana
+References: <3847@beguine.UUCP> <BAUMGART.91May22180232@info7.esquire.dpw.com>
+Date: Thu, 23 May 1991 01:26:46 GMT
+Lines: 26
+
+baumgart@esquire.dpw.com (Steve Baumgarten) writes:
+
+>In article <3847@beguine.UUCP> danielg@med.unc.edu (Daniel Gene Sinclair) writes(about Smash TV):
+
+>I still play every now and then, but I get frustrated by the end of
+>the third round, when billions of thugs pour out of doors non-stop.
+>At some point SMASH gets boring for me, where ROBOTRON never did.  I
+>don't know why, exactly, but I don't have the same desire to master
+>the game that I did with ROBOTRON.
+
+That's because ROBOTRON was better!! It's incredible the lack of game
+design that goes into today's games.  Sure, there's plenty of graphic
+design, but there's no attention paid to making a fun game that will
+challenge a player without frustrating or boring him/her.  And forget
+about possibilities, todays games are so limited, players just learn
+the "tricks" for each wave and say they've "mastered" the game!  The
+worst part is that it's not going to get any better -- today's players
+want gimmicks and that's what they get.  Well, that's enough raving for
+now, I'm off to play some Race Drivin'...
+--
+
+__ ____ ____ ________ __ __ __ __tbm19061@uxa.cso.uiuc.edu_________________
+   \_  _\  _ \  _  _  \  \  \  \
+     \   \  \ \  \  \  \__\__\__\
+______\__ \____\__\__\__\__\__\__\__Witty quotes coming soon!!_____________
+
+
+
+Article 1040 of rec.games.video.arcade:
+Path: bronze!sol.ctr.columbia.edu!spool.mu.edu!mips!zaphod.mps.ohio-state.edu!uakari.primate.wisc.edu!relay.nswc.navy.mil!oasys!fish
+From: fish@oasys.dt.navy.mil (Jim Fishenden)
+Newsgroups: rec.games.video.arcade
+Subject: Smash TV Help
+Message-ID: <7933@oasys.dt.navy.mil>
+Date: 23 May 91 17:17:14 GMT
+Article-I.D.: oasys.7933
+Reply-To: fish@oasys.dt.navy.mil (Jim Fishenden)
+Distribution: usa
+Organization: David Taylor Research Center, Bethesda, MD
+Lines: 3
+
+I realize this will seem basic too all of you experts, but how do you
+kill Scarface in at the end of the second round? He just tramples me
+and my partner within about 60 seconds (tops). Thanks for the advice!!
+
+
+Article 1041 of rec.games.video.arcade:
+Path: bronze!sol.ctr.columbia.edu!zaphod.mps.ohio-state.edu!usc!apple!uokmax!andrew
+From: andrew@uokmax.ecn.uoknor.edu (Andrew Kephart)
+Newsgroups: rec.games.video.arcade
+Subject: Re: Smash TV Help
+Message-ID: <1991May23.202849.19104@uokmax.ecn.uoknor.edu>
+Date: 23 May 91 20:28:49 GMT
+References: <7933@oasys.dt.navy.mil>
+Distribution: usa
+Organization: Engineering Computer Network, University of Oklahoma, Norman, OK
+Lines: 20
+
+fish@oasys.dt.navy.mil (Jim Fishenden) writes:
+
+>I realize this will seem basic too all of you experts, but how do you
+>kill Scarface in at the end of the second round? He just tramples me
+>and my partner within about 60 seconds (tops). Thanks for the advice!!
+
+     It's easy:
+       1.  Insert another quarter
+       2.  Play 60 more seconds
+       3.  Repeat steps 1. and 2.
+       4.  Repeat steps 1. and 2.
+       5.  Repeat steps 1. and 2.
+       6.  Repeat steps 1. and 2.
+       7.  "" ""
+       8.  "" ""
+       9. - 25. "" ""
+
+       Great, eh?
+
+-A.
+
+
+Article 1056 of rec.games.video.arcade:
+Path: bronze!sol.ctr.columbia.edu!samsung!news.cs.indiana.edu!ariel.unm.edu!cs.umn.edu!talon.UCS.ORST.EDU!orstcs!prism!tannerr
+From: tannerr@prism.cs.orst.edu (Ryan Tanner)
+Newsgroups: rec.games.video.arcade
+Subject: Re: Smash TV Help
+Message-ID: <1991May23.235432.23946@lynx.CS.ORST.EDU>
+Date: 23 May 91 23:54:32 GMT
+References: <7933@oasys.dt.navy.mil>
+Sender: @lynx.CS.ORST.EDU
+Distribution: usa
+Organization: Oregon State University, Computer Science Dept
+Lines: 19
+Nntp-Posting-Host: prism.cs.orst.edu
+
+In <7933@oasys.dt.navy.mil> fish@oasys.dt.navy.mil (Jim Fishenden) writes:
+
+>I realize this will seem basic too all of you experts, but how do you
+>kill Scarface in at the end of the second round? He just tramples me
+>and my partner within about 60 seconds (tops). Thanks for the advice!!
+
+You must destroy the ring around Scarface, knock out his eyeballs and
+several sets of teeth.  Then he'll become a skull.  Best way to get
+him is to use the hoover (gun that shoots balls and sounds like a vacuume
+cleaner) and hit his center.  If you don't have a hoover, work on his
+perimeter.  Sections will flash when the section isn't destroyed yet.
+This is a tough guy and it took my partner and I a while to get
+past him on a regular basis.  If you've got a shield from grenades
+or the hoover, try to protect your partner from the spike balls while
+working on Scarface.
+
+Ryan (tannerr@prism.cs.orst.edu)
+^
+Yea, though I walk through the valley of Email, I shall fear no sig.
+
+
+Article 1077 of rec.games.video.arcade:
+Path: bronze!sol.ctr.columbia.edu!spool.mu.edu!think.com!zaphod.mps.ohio-state.edu!hobbes.physics.uiowa.edu!maverick.ksu.ksu.edu!unlinfo.unl.edu!hoss!greg
+From: greg@hoss.unl.edu (Lig Lury Jr.)
+Newsgroups: rec.games.video.arcade
+Subject: Re: I just tried Smash(ed?) TV...
+Message-ID: <1991May24.184845.4633@unlinfo.unl.edu>
+Date: 24 May 91 18:48:45 GMT
+Article-I.D.: unlinfo.1991May24.184845.4633
+References: <3847@beguine.UUCP> <BAUMGART.91May22180232@info7.esquire.dpw.com>
+Sender: news@unlinfo.unl.edu
+Organization: GBBS/ACOS Sysop Support
+Lines: 44
+Nntp-Posting-Host: hoss.unl.edu
+
+baumgart@esquire.dpw.com (Steve Baumgarten) writes:
+>danielg@med.unc.edu (Daniel Gene Sinclair) writes:
+
+>>Well, I spent a whole dollar on Smash TV, and I love it!  However, I only
+>>got to the third level (and not on one quarter either ;).  Any of you
+>>officianados want to give me your strategies?  Anything I should look for,
+>>or make a point of killing/picking up/etc?  I'd like to master this game
+>>with a little less money.
+
+>Pick up keys; if your game displays "Collect 10 Keys" when you leave
+>the first room, it has a recent ROM rev. and thus the fabled "Pleasure
+>Dome".  I've yet to see it, but it's sure got to be better than the
+>older ROMs' ripoff ending.
+
+Not much better.  You get less text at the end with the right ending, and
+nothing really "praising" your ability.
+
+>The bosses are best handled by staying above them; I suck on the snake
+>round, so don't ask me what to do there (beyond just putting more
+>quarters in).
+
+Just make sure you grab any and all shields and "Happy Feet" (what the
+increased speed is called here).  Also, remember that for a few seconds
+after you lose a shield you have "Limited Invinsibility", and can often
+run straight through a crowd of enemies without a scratch.  Not too
+successful when against end-level enemies.
+
+>If you have a choice of shooting a green thug or a pink thug, shoot
+>the pink thug, since he's faster and smarter.  The greenies will
+>generally leave you alone unless they see you; the pink guys head
+>straight for you.
+
+Green and Pink Thugs?  Am I the only one who sees the resemblance to these
+foes to Green and Red Shirts from Star Trek (the old series)?
+
+>Steve Baumgarten
+>baumgart@esquire.dpw.com
+>cmcl2!esquire!baumgart
+
+--
+///   ____   \\\ "The major problem--one of the major problems, for there are
+| |/ /    \ \| |       several--one of the many major problems with governing
+ \\_|\____/|_//            people is of whom you get to do it, or more to the
+greg \_\\\/ hoss.unl.edu    point, who gets people to let them do it to them."
+
+
+Article 1079 of rec.games.video.arcade:
+Path: bronze!sol.ctr.columbia.edu!spool.mu.edu!mips!zaphod.mps.ohio-state.edu!hobbes.physics.uiowa.edu!maverick.ksu.ksu.edu!unlinfo.unl.edu!hoss!greg
+From: greg@hoss.unl.edu (Lig Lury Jr.)
+Newsgroups: rec.games.video.arcade
+Subject: Re: Smash TV Help
+Message-ID: <1991May24.185131.4714@unlinfo.unl.edu>
+Date: 24 May 91 18:51:31 GMT
+Article-I.D.: unlinfo.1991May24.185131.4714
+References: <7933@oasys.dt.navy.mil> <1991May23.235432.23946@lynx.CS.ORST.EDU>
+Sender: news@unlinfo.unl.edu
+Distribution: usa
+Organization: GBBS/ACOS Sysop Support
+Lines: 28
+Nntp-Posting-Host: hoss.unl.edu
+
+tannerr@prism.cs.orst.edu (Ryan Tanner) writes:
+>fish@oasys.dt.navy.mil (Jim Fishenden) writes:
+
+>>I realize this will seem basic too all of you experts, but how do you
+>>kill Scarface in at the end of the second round? He just tramples me
+>>and my partner within about 60 seconds (tops). Thanks for the advice!!
+
+>You must destroy the ring around Scarface, knock out his eyeballs and
+>several sets of teeth.  Then he'll become a skull.  Best way to get
+>him is to use the hoover (gun that shoots balls and sounds like a vacuume
+>cleaner) and hit his center.  If you don't have a hoover, work on his
+>perimeter.  Sections will flash when the section isn't destroyed yet.
+>This is a tough guy and it took my partner and I a while to get
+>past him on a regular basis.  If you've got a shield from grenades
+>or the hoover, try to protect your partner from the spike balls while
+>working on Scarface.
+
+Don't forget that you can stand on his face while you have a shield, if
+you can corner him.  Often easiest to do when one player is holding him
+steady with gunfire and you come back into the game.
+
+>Ryan (tannerr@prism.cs.orst.edu)
+
+--
+///   ____   \\\ "The major problem--one of the major problems, for there are
+| |/ /    \ \| |       several--one of the many major problems with governing
+ \\_|\____/|_//            people is of whom you get to do it, or more to the
+greg \_\\\/ hoss.unl.edu    point, who gets people to let them do it to them."
+
+
+Article 1100 of rec.games.video.arcade:
+Path: bronze!sol.ctr.columbia.edu!spool.mu.edu!think.com!zaphod.mps.ohio-state.edu!wuarchive!psuvax1!hsdndev!cmcl2!esquire!baumgart
+From: baumgart@esquire.dpw.com (Steve Baumgarten)
+Newsgroups: rec.games.video.arcade
+Subject: Re: Smash TV Help
+Message-ID: <BAUMGART.91May24090504@info7.esquire.dpw.com>
+Date: 24 May 91 13:05:04 GMT
+Article-I.D.: info7.BAUMGART.91May24090504
+References: <7933@oasys.dt.navy.mil>
+	<1991May23.202849.19104@uokmax.ecn.uoknor.edu>
+Sender: news@DPW.COM
+Distribution: usa
+Organization: Davis Polk & Wardwell
+Lines: 35
+In-reply-to: andrew@uokmax.ecn.uoknor.edu's message of 23 May 91 20:28:49 GMT
+
+In article <1991May23.202849.19104@uokmax.ecn.uoknor.edu> andrew@uokmax.ecn.uoknor.edu (Andrew Kephart) writes:
+
+   fish@oasys.dt.navy.mil (Jim Fishenden) writes:
+
+   >I realize this will seem basic too all of you experts, but how do you
+   >kill Scarface in at the end of the second round? He just tramples me
+   >and my partner within about 60 seconds (tops). Thanks for the advice!!
+
+	It's easy:
+	  1.  Insert another quarter
+	  2.  Play 60 more seconds
+	  3.  Repeat steps 1. and 2.
+	  4.  Repeat steps 1. and 2.
+
+	  [ ad infinitum ]
+
+Yes, this is my favorite way, and best of all -- you can't lose!
+
+But just the other day I saw someone play Scarface without dying once.
+It wasn't clear what he was doing (that I don't do, since I've never
+played Scarface without dying at least one time); it looked like he
+might have been playing closer to Scarface than I normally would.  In
+fact, he never seemed to even *try* to avoid those yellow blobs or the
+spinning spikies -- he just stood fairly close and blasted away.  He
+also picked up nearly all the weapons, but I always try to do that
+myself. 
+
+I *know* you should play Mutoid Man from the top and corners; perhaps
+you should play Scarface up close.  It's a thought, anyway.
+
+--
+   Steve Baumgarten             | "New York... when civilization falls apart,
+   Davis Polk & Wardwell        |  remember, we were way ahead of you."
+   baumgart@esquire.dpw.com     | 
+   cmcl2!esquire!baumgart       |                           - David Letterman
+
+
+Article 1139 of rec.games.video.arcade:
+Path: bronze!sol.ctr.columbia.edu!zaphod.mps.ohio-state.edu!wuarchive!uunet!vtserf!creatures!csgrad!svp
+From: svp@csgrad.cs.vt.edu (Joel Patterson)
+Newsgroups: rec.games.video.arcade
+Subject: Smash TV keys -- How to use?
+Keywords: smash, keys
+Message-ID: <1249@creatures.cs.vt.edu>
+Date: 28 May 91 18:22:03 GMT
+Sender: usenet@creatures.cs.vt.edu
+Reply-To: svp@csgrad.cs.vt.edu (Joel Patterson)
+Organization: Virginia Tech Computer Science, Blacksburg, VA
+Lines: 14
+
+In playing Smash TV, on the third level we have found two rooms, the first
+says "You may enter Key room #1", the second "You may enter Key room #2".
+
+How do you get into these rooms?  We've tried everything....
+
+
+Joel
+
+
+--
+Joel Patterson   	                          UUCP: svp@csgrad.UUCP
+703-951-1134					  INET: svp@csgrad.cs.vt.edu
+"The documentation for this program is obvious, therefore it is left as an 
+			exercise for the grader."
+
+Article 989 of rec.games.video.arcade:
+Path: bronze!sol.ctr.columbia.edu!spool.mu.edu!think.com!zaphod.mps.ohio-state.edu!cis.ohio-state.edu!pacific.mps.ohio-state.edu!linac!att!rutgers!mcnc!beguine!danielg
+From: danielg@med.unc.edu (Daniel Gene Sinclair)
+Newsgroups: rec.games.video.arcade
+Subject: I just tried Smash(ed?) TV...
+Message-ID: <3847@beguine.UUCP>
+Date: 21 May 91 13:54:18 GMT
+Article-I.D.: beguine.3847
+Sender: usenet@beguine.UUCP
+Organization: UNC-CH School of Medicine
+Lines: 21
+Originator: danielg@earl
+
+I haven't spent any money in an arcade for a long time, mostly because
+most of the games are the Ninja/kick-the-guy-in-the-face/Streetfighter
+type (ho-hum).  However, on reading about SmashTV in this group, I thought
+I'd give it a try, esp. since I'm an old Williams fan (Stargate and Joust,
+my fav's).
+
+Well, I spent a whole dollar on Smash TV, and I love it!  However, I only
+got to the third level (and not on one quarter either ;).  Any of you
+officianados want to give me your strategies?  Anything I should look for,
+or make a point of killing/picking up/etc?  I'd like to master this game
+with a little less money.
+
+Thanks in advance,
+
+danielg
+
+-- 
+<>< - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  |
+><>     He who has the Son has [eternal] life,                     ==+== 
+<><     and he who does not have the Son does not have life.         | 
+<>< - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  |
+
+
+Article 1001 of rec.games.video.arcade:
+Path: bronze!sol.ctr.columbia.edu!spool.mu.edu!cs.umn.edu!talon.UCS.ORST.EDU!orstcs!prism!tannerr
+From: tannerr@prism.cs.orst.edu (Ryan Tanner)
+Newsgroups: rec.games.video.arcade
+Subject: Re: Smash TV
+Keywords: Pleausre Dome
+Message-ID: <1991May22.035004.3876@lynx.CS.ORST.EDU>
+Date: 22 May 91 03:50:04 GMT
+Article-I.D.: lynx.1991May22.035004.3876
+References: <1991May20.181720.16973@agate.berkeley.edu> <1991May20.191150.22284@agate.berkeley.edu>
+Sender: @lynx.CS.ORST.EDU
+Distribution: ca
+Organization: Oregon State University, Computer Science Dept
+Lines: 25
+Nntp-Posting-Host: prism.cs.orst.edu
+
+In <1991May20.191150.22284@agate.berkeley.edu> chi@tempest.Berkeley.EDU (Albert S. Chi) writes:
+
+>In article <1991May20.181720.16973> bjue@ocf.berkeley.edu (Brian Jue) writes:
+>>
+>>       To everyone at Cal.  The Smash TV at the ASUC, what version is it?
+>>Are we playing in vain, never to reach the Pleasure Dome at the end?  I've
+>>seen people play to the cobras and die...
+>>
+>I'm taking an educated guess here, but I don't think the machine in the ASUC
+>Underground is "Dome-able." I believe one of the criteria is the message
+>"Collect x Keys," where x is a finite number (10?).  When I saw a key
+>message, it only said, "Collect Keys," implying an infinite number of keys
+>are needed for the Dome.  Am I right on this?
+
+>--------------------------------------------
+>| Plain and simple.  This is my signature. |      Albert Chi
+>| A famous quote will appear here later.   |      chi@headcrash.berkeley.edu
+>--------------------------------------------
+
+If you really want to find out, find the switch on the top of the until.
+Turn it off for a few seconds and then on again.  After the ROM check,
+it will print the ROM revisioni at the top of the screen.  Hope
+this helps.
+
+Ryan (tannerr@prism.cs.orst.edu)
+
+
+Article 1014 of rec.games.video.arcade:
+Path: bronze!sol.ctr.columbia.edu!zaphod.mps.ohio-state.edu!think.com!hsdndev!cmcl2!esquire!baumgart
+From: baumgart@esquire.dpw.com (Steve Baumgarten)
+Newsgroups: rec.games.video.arcade
+Subject: Re: I just tried Smash(ed?) TV...
+Message-ID: <BAUMGART.91May22180232@info7.esquire.dpw.com>
+Date: 22 May 91 22:02:32 GMT
+References: <3847@beguine.UUCP>
+Sender: news@DPW.COM
+Organization: Davis Polk & Wardwell
+Lines: 49
+In-reply-to: danielg@med.unc.edu's message of 21 May 91 13:54:18 GMT
+
+In article <3847@beguine.UUCP> danielg@med.unc.edu (Daniel Gene Sinclair) writes:
+
+   Well, I spent a whole dollar on Smash TV, and I love it!  However, I only
+   got to the third level (and not on one quarter either ;).  Any of you
+   officianados want to give me your strategies?  Anything I should look for,
+   or make a point of killing/picking up/etc?  I'd like to master this game
+   with a little less money.
+
+Pick up keys; if your game displays "Collect 10 Keys" when you leave
+the first room, it has a recent ROM rev. and thus the fabled "Pleasure
+Dome".  I've yet to see it, but it's sure got to be better than the
+older ROMs' ripoff ending.
+
+Whenever you see an icon of a free man, pick it up.  Took me a while
+to figure this out.
+
+The bosses are best handled by staying above them; I suck on the snake
+round, so don't ask me what to do there (beyond just putting more
+quarters in).
+
+If you're on the third wave after only a buck, you're doing much
+better than I did when I first started.  On the higher levels, be sure
+to stay near the middle of the floor and don't miss a weapon or you
+are surely dead.  Don't let them back you into a corner (unless you're
+playing two-player, in which case the corners are OK).
+
+If you have a choice of shooting a green thug or a pink thug, shoot
+the pink thug, since he's faster and smarter.  The greenies will
+generally leave you alone unless they see you; the pink guys head
+straight for you.
+
+The money and prizes are totally meaningless, as is your score, which
+is always pretty much related to what wave you're on.  Thanks for this
+exciting innovation, Williams...
+
+I still play every now and then, but I get frustrated by the end of
+the third round, when billions of thugs pour out of doors non-stop.
+At some point SMASH gets boring for me, where ROBOTRON never did.  I
+don't know why, exactly, but I don't have the same desire to master
+the game that I did with ROBOTRON.
+
+The most effective strategy, though, is to have a handful of quarters
+always at the ready...
+
+--
+   Steve Baumgarten             | "New York... when civilization falls apart,
+   Davis Polk & Wardwell        |  remember, we were way ahead of you."
+   baumgart@esquire.dpw.com     | 
+   cmcl2!esquire!baumgart       |                           - David Letterman
+
+
+Article 1016 of rec.games.video.arcade:
+Newsgroups: rec.games.video.arcade
+Path: bronze!news.cs.indiana.edu!ux1.cso.uiuc.edu!uxa.cso.uiuc.edu!tbm19061
+From: tbm19061@uxa.cso.uiuc.edu (Thomas B MacIukenas)
+Subject: Re: I just tried Smash(ed?) TV...
+Message-ID: <1991May23.012646.27310@ux1.cso.uiuc.edu>
+Sender: usenet@ux1.cso.uiuc.edu (News)
+Organization: University of Illinois at Urbana
+References: <3847@beguine.UUCP> <BAUMGART.91May22180232@info7.esquire.dpw.com>
+Date: Thu, 23 May 1991 01:26:46 GMT
+Lines: 26
+
+baumgart@esquire.dpw.com (Steve Baumgarten) writes:
+
+>In article <3847@beguine.UUCP> danielg@med.unc.edu (Daniel Gene Sinclair) writes(about Smash TV):
+
+>I still play every now and then, but I get frustrated by the end of
+>the third round, when billions of thugs pour out of doors non-stop.
+>At some point SMASH gets boring for me, where ROBOTRON never did.  I
+>don't know why, exactly, but I don't have the same desire to master
+>the game that I did with ROBOTRON.
+
+That's because ROBOTRON was better!! It's incredible the lack of game
+design that goes into today's games.  Sure, there's plenty of graphic
+design, but there's no attention paid to making a fun game that will
+challenge a player without frustrating or boring him/her.  And forget
+about possibilities, todays games are so limited, players just learn
+the "tricks" for each wave and say they've "mastered" the game!  The
+worst part is that it's not going to get any better -- today's players
+want gimmicks and that's what they get.  Well, that's enough raving for
+now, I'm off to play some Race Drivin'...
+--
+
+__ ____ ____ ________ __ __ __ __tbm19061@uxa.cso.uiuc.edu_________________
+   \_  _\  _ \  _  _  \  \  \  \
+     \   \  \ \  \  \  \__\__\__\
+______\__ \____\__\__\__\__\__\__\__Witty quotes coming soon!!_____________
+
+
+
+Article 1040 of rec.games.video.arcade:
+Path: bronze!sol.ctr.columbia.edu!spool.mu.edu!mips!zaphod.mps.ohio-state.edu!uakari.primate.wisc.edu!relay.nswc.navy.mil!oasys!fish
+From: fish@oasys.dt.navy.mil (Jim Fishenden)
+Newsgroups: rec.games.video.arcade
+Subject: Smash TV Help
+Message-ID: <7933@oasys.dt.navy.mil>
+Date: 23 May 91 17:17:14 GMT
+Article-I.D.: oasys.7933
+Reply-To: fish@oasys.dt.navy.mil (Jim Fishenden)
+Distribution: usa
+Organization: David Taylor Research Center, Bethesda, MD
+Lines: 3
+
+I realize this will seem basic too all of you experts, but how do you
+kill Scarface in at the end of the second round? He just tramples me
+and my partner within about 60 seconds (tops). Thanks for the advice!!
+
+
+Article 1041 of rec.games.video.arcade:
+Path: bronze!sol.ctr.columbia.edu!zaphod.mps.ohio-state.edu!usc!apple!uokmax!andrew
+From: andrew@uokmax.ecn.uoknor.edu (Andrew Kephart)
+Newsgroups: rec.games.video.arcade
+Subject: Re: Smash TV Help
+Message-ID: <1991May23.202849.19104@uokmax.ecn.uoknor.edu>
+Date: 23 May 91 20:28:49 GMT
+References: <7933@oasys.dt.navy.mil>
+Distribution: usa
+Organization: Engineering Computer Network, University of Oklahoma, Norman, OK
+Lines: 20
+
+fish@oasys.dt.navy.mil (Jim Fishenden) writes:
+
+>I realize this will seem basic too all of you experts, but how do you
+>kill Scarface in at the end of the second round? He just tramples me
+>and my partner within about 60 seconds (tops). Thanks for the advice!!
+
+     It's easy:
+       1.  Insert another quarter
+       2.  Play 60 more seconds
+       3.  Repeat steps 1. and 2.
+       4.  Repeat steps 1. and 2.
+       5.  Repeat steps 1. and 2.
+       6.  Repeat steps 1. and 2.
+       7.  "" ""
+       8.  "" ""
+       9. - 25. "" ""
+
+       Great, eh?
+
+-A.
+
+
+Article 1056 of rec.games.video.arcade:
+Path: bronze!sol.ctr.columbia.edu!samsung!news.cs.indiana.edu!ariel.unm.edu!cs.umn.edu!talon.UCS.ORST.EDU!orstcs!prism!tannerr
+From: tannerr@prism.cs.orst.edu (Ryan Tanner)
+Newsgroups: rec.games.video.arcade
+Subject: Re: Smash TV Help
+Message-ID: <1991May23.235432.23946@lynx.CS.ORST.EDU>
+Date: 23 May 91 23:54:32 GMT
+References: <7933@oasys.dt.navy.mil>
+Sender: @lynx.CS.ORST.EDU
+Distribution: usa
+Organization: Oregon State University, Computer Science Dept
+Lines: 19
+Nntp-Posting-Host: prism.cs.orst.edu
+
+In <7933@oasys.dt.navy.mil> fish@oasys.dt.navy.mil (Jim Fishenden) writes:
+
+>I realize this will seem basic too all of you experts, but how do you
+>kill Scarface in at the end of the second round? He just tramples me
+>and my partner within about 60 seconds (tops). Thanks for the advice!!
+
+You must destroy the ring around Scarface, knock out his eyeballs and
+several sets of teeth.  Then he'll become a skull.  Best way to get
+him is to use the hoover (gun that shoots balls and sounds like a vacuume
+cleaner) and hit his center.  If you don't have a hoover, work on his
+perimeter.  Sections will flash when the section isn't destroyed yet.
+This is a tough guy and it took my partner and I a while to get
+past him on a regular basis.  If you've got a shield from grenades
+or the hoover, try to protect your partner from the spike balls while
+working on Scarface.
+
+Ryan (tannerr@prism.cs.orst.edu)
+^
+Yea, though I walk through the valley of Email, I shall fear no sig.
+
+
+Article 1077 of rec.games.video.arcade:
+Path: bronze!sol.ctr.columbia.edu!spool.mu.edu!think.com!zaphod.mps.ohio-state.edu!hobbes.physics.uiowa.edu!maverick.ksu.ksu.edu!unlinfo.unl.edu!hoss!greg
+From: greg@hoss.unl.edu (Lig Lury Jr.)
+Newsgroups: rec.games.video.arcade
+Subject: Re: I just tried Smash(ed?) TV...
+Message-ID: <1991May24.184845.4633@unlinfo.unl.edu>
+Date: 24 May 91 18:48:45 GMT
+Article-I.D.: unlinfo.1991May24.184845.4633
+References: <3847@beguine.UUCP> <BAUMGART.91May22180232@info7.esquire.dpw.com>
+Sender: news@unlinfo.unl.edu
+Organization: GBBS/ACOS Sysop Support
+Lines: 44
+Nntp-Posting-Host: hoss.unl.edu
+
+baumgart@esquire.dpw.com (Steve Baumgarten) writes:
+>danielg@med.unc.edu (Daniel Gene Sinclair) writes:
+
+>>Well, I spent a whole dollar on Smash TV, and I love it!  However, I only
+>>got to the third level (and not on one quarter either ;).  Any of you
+>>officianados want to give me your strategies?  Anything I should look for,
+>>or make a point of killing/picking up/etc?  I'd like to master this game
+>>with a little less money.
+
+>Pick up keys; if your game displays "Collect 10 Keys" when you leave
+>the first room, it has a recent ROM rev. and thus the fabled "Pleasure
+>Dome".  I've yet to see it, but it's sure got to be better than the
+>older ROMs' ripoff ending.
+
+Not much better.  You get less text at the end with the right ending, and
+nothing really "praising" your ability.
+
+>The bosses are best handled by staying above them; I suck on the snake
+>round, so don't ask me what to do there (beyond just putting more
+>quarters in).
+
+Just make sure you grab any and all shields and "Happy Feet" (what the
+increased speed is called here).  Also, remember that for a few seconds
+after you lose a shield you have "Limited Invinsibility", and can often
+run straight through a crowd of enemies without a scratch.  Not too
+successful when against end-level enemies.
+
+>If you have a choice of shooting a green thug or a pink thug, shoot
+>the pink thug, since he's faster and smarter.  The greenies will
+>generally leave you alone unless they see you; the pink guys head
+>straight for you.
+
+Green and Pink Thugs?  Am I the only one who sees the resemblance to these
+foes to Green and Red Shirts from Star Trek (the old series)?
+
+>Steve Baumgarten
+>baumgart@esquire.dpw.com
+>cmcl2!esquire!baumgart
+
+--
+///   ____   \\\ "The major problem--one of the major problems, for there are
+| |/ /    \ \| |       several--one of the many major problems with governing
+ \\_|\____/|_//            people is of whom you get to do it, or more to the
+greg \_\\\/ hoss.unl.edu    point, who gets people to let them do it to them."
+
+
+Article 1079 of rec.games.video.arcade:
+Path: bronze!sol.ctr.columbia.edu!spool.mu.edu!mips!zaphod.mps.ohio-state.edu!hobbes.physics.uiowa.edu!maverick.ksu.ksu.edu!unlinfo.unl.edu!hoss!greg
+From: greg@hoss.unl.edu (Lig Lury Jr.)
+Newsgroups: rec.games.video.arcade
+Subject: Re: Smash TV Help
+Message-ID: <1991May24.185131.4714@unlinfo.unl.edu>
+Date: 24 May 91 18:51:31 GMT
+Article-I.D.: unlinfo.1991May24.185131.4714
+References: <7933@oasys.dt.navy.mil> <1991May23.235432.23946@lynx.CS.ORST.EDU>
+Sender: news@unlinfo.unl.edu
+Distribution: usa
+Organization: GBBS/ACOS Sysop Support
+Lines: 28
+Nntp-Posting-Host: hoss.unl.edu
+
+tannerr@prism.cs.orst.edu (Ryan Tanner) writes:
+>fish@oasys.dt.navy.mil (Jim Fishenden) writes:
+
+>>I realize this will seem basic too all of you experts, but how do you
+>>kill Scarface in at the end of the second round? He just tramples me
+>>and my partner within about 60 seconds (tops). Thanks for the advice!!
+
+>You must destroy the ring around Scarface, knock out his eyeballs and
+>several sets of teeth.  Then he'll become a skull.  Best way to get
+>him is to use the hoover (gun that shoots balls and sounds like a vacuume
+>cleaner) and hit his center.  If you don't have a hoover, work on his
+>perimeter.  Sections will flash when the section isn't destroyed yet.
+>This is a tough guy and it took my partner and I a while to get
+>past him on a regular basis.  If you've got a shield from grenades
+>or the hoover, try to protect your partner from the spike balls while
+>working on Scarface.
+
+Don't forget that you can stand on his face while you have a shield, if
+you can corner him.  Often easiest to do when one player is holding him
+steady with gunfire and you come back into the game.
+
+>Ryan (tannerr@prism.cs.orst.edu)
+
+--
+///   ____   \\\ "The major problem--one of the major problems, for there are
+| |/ /    \ \| |       several--one of the many major problems with governing
+ \\_|\____/|_//            people is of whom you get to do it, or more to the
+greg \_\\\/ hoss.unl.edu    point, who gets people to let them do it to them."
+
+
+Article 1100 of rec.games.video.arcade:
+Path: bronze!sol.ctr.columbia.edu!spool.mu.edu!think.com!zaphod.mps.ohio-state.edu!wuarchive!psuvax1!hsdndev!cmcl2!esquire!baumgart
+From: baumgart@esquire.dpw.com (Steve Baumgarten)
+Newsgroups: rec.games.video.arcade
+Subject: Re: Smash TV Help
+Message-ID: <BAUMGART.91May24090504@info7.esquire.dpw.com>
+Date: 24 May 91 13:05:04 GMT
+Article-I.D.: info7.BAUMGART.91May24090504
+References: <7933@oasys.dt.navy.mil>
+	<1991May23.202849.19104@uokmax.ecn.uoknor.edu>
+Sender: news@DPW.COM
+Distribution: usa
+Organization: Davis Polk & Wardwell
+Lines: 35
+In-reply-to: andrew@uokmax.ecn.uoknor.edu's message of 23 May 91 20:28:49 GMT
+
+In article <1991May23.202849.19104@uokmax.ecn.uoknor.edu> andrew@uokmax.ecn.uoknor.edu (Andrew Kephart) writes:
+
+   fish@oasys.dt.navy.mil (Jim Fishenden) writes:
+
+   >I realize this will seem basic too all of you experts, but how do you
+   >kill Scarface in at the end of the second round? He just tramples me
+   >and my partner within about 60 seconds (tops). Thanks for the advice!!
+
+	It's easy:
+	  1.  Insert another quarter
+	  2.  Play 60 more seconds
+	  3.  Repeat steps 1. and 2.
+	  4.  Repeat steps 1. and 2.
+
+	  [ ad infinitum ]
+
+Yes, this is my favorite way, and best of all -- you can't lose!
+
+But just the other day I saw someone play Scarface without dying once.
+It wasn't clear what he was doing (that I don't do, since I've never
+played Scarface without dying at least one time); it looked like he
+might have been playing closer to Scarface than I normally would.  In
+fact, he never seemed to even *try* to avoid those yellow blobs or the
+spinning spikies -- he just stood fairly close and blasted away.  He
+also picked up nearly all the weapons, but I always try to do that
+myself. 
+
+I *know* you should play Mutoid Man from the top and corners; perhaps
+you should play Scarface up close.  It's a thought, anyway.
+
+--
+   Steve Baumgarten             | "New York... when civilization falls apart,
+   Davis Polk & Wardwell        |  remember, we were way ahead of you."
+   baumgart@esquire.dpw.com     | 
+   cmcl2!esquire!baumgart       |                           - David Letterman
+
+
+Article 1139 of rec.games.video.arcade:
+Path: bronze!sol.ctr.columbia.edu!zaphod.mps.ohio-state.edu!wuarchive!uunet!vtserf!creatures!csgrad!svp
+From: svp@csgrad.cs.vt.edu (Joel Patterson)
+Newsgroups: rec.games.video.arcade
+Subject: Smash TV keys -- How to use?
+Keywords: smash, keys
+Message-ID: <1249@creatures.cs.vt.edu>
+Date: 28 May 91 18:22:03 GMT
+Sender: usenet@creatures.cs.vt.edu
+Reply-To: svp@csgrad.cs.vt.edu (Joel Patterson)
+Organization: Virginia Tech Computer Science, Blacksburg, VA
+Lines: 14
+
+In playing Smash TV, on the third level we have found two rooms, the first
+says "You may enter Key room #1", the second "You may enter Key room #2".
+
+How do you get into these rooms?  We've tried everything....
+
+
+Joel
+
+
+--
+Joel Patterson   	                          UUCP: svp@csgrad.UUCP
+703-951-1134					  INET: svp@csgrad.cs.vt.edu
+"The documentation for this program is obvious, therefore it is left as an 
+			exercise for the grader."
+
+
+Article 1235 of rec.games.video.arcade:
+Path: bronze!sol.ctr.columbia.edu!lll-winken!elroy.jpl.nasa.gov!swrinde!mips!pacbell.com!tandem!netcomsv!jhannah
+From: jhannah@netcom.COM (Jamal Hannah)
+Newsgroups: rec.games.video.arcade
+Subject: Re: Smash TV keys -- How to use?
+Keywords: smash, keys
+Message-ID: <1991Jun2.230551.8655@netcom.COM>
+Date: 2 Jun 91 23:05:51 GMT
+References: <1249@creatures.cs.vt.edu> <1991Jun1.005625.12196@unlinfo.unl.edu>
+Organization: Netcom - Online Communication Services  UNIX System {408 241-9760 guest}
+Lines: 20
+
+In article <1991Jun1.005625.12196@unlinfo.unl.edu> greg@hoss.unl.edu (Lig Lury Jr.) writes:
+>svp@csgrad.cs.vt.edu (Joel Patterson) writes:
+>
+>>In playing Smash TV, on the third level we have found two rooms, the first
+>>says "You may enter Key room #1", the second "You may enter Key room #2".
+>
+>>How do you get into these rooms?  We've tried everything....
+>
+>If it says it, you are there.  You got there by having keys.  Unfortunately,
+>on that machine you will never get to the Pleasure Dome, as it did not exist
+>in that model.
+
+The best way I have heard to know if the pleasure dome exists in the
+model of Smash TV you are playing is if the game says "Dude!" when you
+grab the symbol for an extra player.
+-- 
++--------------------------------------------------------------------------+
+| Jamal Hannah   | Internet: jhannah@netcom.com                            |
+|                |                           UUCP: ..!apple!netcom!jhannah |
++--------------------------------------------------------------------------+
+
+
+Article 1271 of rec.games.video.arcade:
+Path: bronze!sol.ctr.columbia.edu!zaphod.mps.ohio-state.edu!cis.ohio-state.edu!tut.cis.ohio-state.edu!ucunix.san.uc.edu!kelch
+From: kelch@ucunix.san.uc.edu (Chris J. Kelch)
+Newsgroups: rec.games.video.arcade
+Subject: Re: Smash TV keys -- How to use?
+Message-ID: <1991Jun5.193105.2621@ucunix.san.uc.edu>
+Date: 5 Jun 91 19:31:05 GMT
+Organization: Univ. of Cincinnati
+Lines: 12
+
+
+jhannah@netcom.COM (Jamal Hannah) writes:
+>The best way I have heard to know if the pleasure dome exists in the
+>model of Smash TV you are playing is if the game says "Dude!" when you
+>grab the symbol for an extra player.
+
+So if the game says "Dude!", is there a pleasure dome or not?
+
+ o
+ |  Rockets launch        -- fly (kelch@ucunix.san.uc.edu) (aka Chris Kelch)
+ |  Children love (and sometimes they explode)
+/:\
+
+
+Article 1301 of rec.games.video.arcade:
+Newsgroups: rec.games.video.arcade
+Path: bronze!sol.ctr.columbia.edu!zaphod.mps.ohio-state.edu!maverick.ksu.ksu.edu!unlinfo.unl.edu!hoss!greg
+From: greg@hoss.unl.edu (Lig Lury Jr.)
+Subject: Re: Smash TV keys -- How to use?
+Message-ID: <1991Jun7.201831.12126@unlinfo.unl.edu>
+Sender: news@unlinfo.unl.edu
+Nntp-Posting-Host: hoss.unl.edu
+Organization: GBBS/ACOS Sysop Support
+References: <1991Jun5.193105.2621@ucunix.san.uc.edu>
+Date: Fri, 7 Jun 1991 20:18:31 GMT
+Lines: 22
+
+kelch@ucunix.san.uc.edu (Chris J. Kelch) writes:
+>jhannah@netcom.COM (Jamal Hannah) writes:
+
+>>The best way I have heard to know if the pleasure dome exists in the
+>>model of Smash TV you are playing is if the game says "Dude!" when you
+>>grab the symbol for an extra player.
+
+>So if the game says "Dude!", is there a pleasure dome or not?
+
+No, I know of two games, one with the Dome, one without.  Both say the
+same thing when you get a life.
+
+> |  Rockets launch        -- fly (kelch@ucunix.san.uc.edu) (aka Chris Kelch)
+
+BTW, I always thought it said "Damn!" in a happy sense.  Sounds like more
+of an "a" sound than a "u" sound to me.  Could have been my imagination.
+
+--
+///   ____   \\\ "The major problem--one of the major problems, for there are
+| |/ /    \ \| |       several--one of the many major problems with governing
+ \\_|\____/|_//            people is of whom you get to do it, or more to the
+greg \_\\\/ hoss.unl.edu    point, who gets people to let them do it to them."
+
+
+Article 1459 of rec.games.video.arcade:
+Path: bronze!sol.ctr.columbia.edu!caen!sdd.hp.com!elroy.jpl.nasa.gov!ncar!noao!amethyst!math.arizona.edu!coates
+From: coates@convx1.ccit.arizona.edu (Xibo)
+Newsgroups: rec.games.video.arcade
+Subject: Smash TV
+Message-ID: <COATES.91Jun22022025@aqua.convx1.ccit.arizona.edu>
+Date: 22 Jun 91 09:20:25 GMT
+Sender: news@amethyst.math.arizona.edu
+Distribution: rec
+Organization: Xibological Perimeter
+Lines: 19
+
+
+Yeah, so, I love this game still, and tonight, thanks to some luck,
+and a guy with a pile o' tokens, we managed to make to the 3rd level.
+Taking out the Mutoid Man is a blast.  At the end of level two we had
+to take out Scarface, and I'll be damned if this didn't work and sound
+almost exactly like Sinistar.  (ah, the memories...) At the third level
+there were rooms on the map that had dollar signs marking them on the 
+map, I guess this is where the keys come in.  We didn't pursue it tho',
+cuz that requires thought, and we were heavily into the blasting the
+shit out everything left and right.  Fun as hell!  At the end of the
+third level there were these two huge snake things, and you could go
+under them, but not the heads.  We ran out of tokens, however, and 
+didn't get to kill them, darn.  But as I died and my partner kept
+going, the first snake really spazzed out, swing all over the screen.
+
+Really intense!  Someday, I'll just bring $10 in tokens or so.
+
+
+Xibo
+
+
+Article 1498 of rec.games.video.arcade:
+Path: bronze!sol.ctr.columbia.edu!spool.mu.edu!sdd.hp.com!mips!ptimtc!nntp-server.caltech.edu!julius
+From: julius@nntp-server.caltech.edu (julius yang)
+Newsgroups: rec.games.video.arcade
+Subject: How much do you spend on 'continue' games? (was Re: Smash TV)
+Message-ID: <1991Jun27.055057.11954@nntp-server.caltech.edu>
+Date: 27 Jun 91 05:50:57 GMT
+Article-I.D.: nntp-ser.1991Jun27.055057.11954
+References: <COATES.91Jun22022025@aqua.convx1.ccit.arizona.edu>
+Distribution: rec
+Organization: California Institute of Technology, Pasadena
+Lines: 24
+
+I noticed that since about 1985 almost every video game in existence has the
+'10 seconds to insert another coin and continue where you left off' feature.
+My question is, exactly how much do you guys spend on continues with a fun
+game?  I've seen people put a LOT of money into Smash TV (twenty or thirty
+dollars of tokens at least) in one sitting.  I rarely use continue features,
+though.  The upshot of this philosophy is being able to destroy Mutoid Man
+and get halfway to Scarface before being utterly overwhelmed.  How about
+the pros out there?
+
+By the way, whatever pointers exist about playing Smash TV exist would be
+extremely helpful to me.  It's an addictive game, but not worth dying every
+thirty seconds in the later waves...
+My own are pretty obvious: accurate fire (and lots of it), keep moving,
+remember where the mines are, get speed as often as possible, don't let the
+double shot ball touch an enemy, and ignore the presents and money!  As for
+killing Mutoid Man I just sit in the upper corners where he can't hit me with
+eyebeams and wait for a weapon to come by.  Oh yes, it's fun to *just* brush
+by a batsman and leave him swinging at thin air...you can cut much closer to
+them than you think.
+-- 
+=============================================================================
+          the julius yang |. .| Duct tape is like the Force--there's a light
+julius@tybalt.caltech.edu | _ | and a dark side, and it holds the universe
+julius@iago.caltech.edu   |   | together. 
+
+
+Article 1502 of rec.games.video.arcade:
+Path: bronze!sol.ctr.columbia.edu!spool.mu.edu!cs.umn.edu!talon!orstcs!prism!tannerr
+From: tannerr@prism.cs.orst.edu (Ryan Tanner)
+Newsgroups: rec.games.video.arcade
+Subject: Re: How much do you spend on 'continue' games? (was Re: Smash TV)
+Message-ID: <1991Jun27.080553.25248@lynx.CS.ORST.EDU>
+Date: 27 Jun 91 08:05:53 GMT
+Article-I.D.: lynx.1991Jun27.080553.25248
+References: <COATES.91Jun22022025@aqua.convx1.ccit.arizona.edu> <1991Jun27.055057.11954@nntp-server.caltech.edu>
+Sender: @lynx.CS.ORST.EDU
+Distribution: rec
+Organization: Oregon State University, Computer Science Dept
+Lines: 55
+Nntp-Posting-Host: prism.cs.orst.edu
+
+In <1991Jun27.055057.11954@nntp-server.caltech.edu> julius@nntp-server.caltech.edu (julius yang) writes:
+
+>I noticed that since about 1985 almost every video game in existence has the
+>'10 seconds to insert another coin and continue where you left off' feature.
+>My question is, exactly how much do you guys spend on continues with a fun
+>game?  I've seen people put a LOT of money into Smash TV (twenty or thirty
+>dollars of tokens at least) in one sitting.  I rarely use continue features,
+>though.  The upshot of this philosophy is being able to destroy Mutoid Man
+>and get halfway to Scarface before being utterly overwhelmed.  How about
+>the pros out there?
+
+I've finished the game on one quarter playing doubles with my friend.  He
+finished in three quarters.  No, the game is not on an easy setting, we've
+just been practicing for 7 months.  We routinely get to Diecobras (end
+of the 3rd level) on one quarter each.  We're getting better at those
+giant snakes, and I think soon we'll be getting past them every time.
+We have ROM revision 4.0, but the owners are getting an upgrade from
+Williams.  My previous experience was Robotron.  I played the game
+on an Apple ][E, and I almost finished level 99 several times.
+
+
+>By the way, whatever pointers exist about playing Smash TV exist would be
+>extremely helpful to me.  It's an addictive game, but not worth dying every
+>thirty seconds in the later waves...
+
+On the harder levels, stick to the corners that are directly accross from
+each other (horiz or vert, not diags).  This lets you help each other out
+when hordes of guys are stampeeding one corner.  Play as a team, and let
+each other get weapons and extra guys.  Remember, 9 guys at one time is
+the most that you can have.  If you have 9 guys and pick one up, it is
+a wasted guy!  On orb levels, stay in the same corner.  This keeps you
+from sending orbs accross the screen at your partner.  This game is
+mostly skill and teamwork.  There aren't a lot of "if you do this, he
+dies instantly" secrets.  Most people die because they're not a team,
+they're two people competing for the same resouces.  I don't like to
+play with such people.  One last hint: I think the best way to kill the
+Diecobras is to stick together.  It usually puts out an orbital or two
+that one player can use to take out the spiked balls.  Let me know if you
+have any clues.
+
+Please email me on how far you can get on one quarter doubles.  There must
+be other people who come close to finishing without pumping.
+
+>=============================================================================
+>          the julius yang |. .| Duct tape is like the Force--there's a light
+>julius@tybalt.caltech.edu | _ | and a dark side, and it holds the universe
+>julius@iago.caltech.edu   |   | together.
+
+                                 ^
+                                 |
+----------------------------------
+|
+I love it!  Great sig!
+
+Ryan (tannerr@prism.cs.orst.edu)
+
+
+Article 2758 of rec.games.video.arcade:
+Path: bronze!sol.ctr.columbia.edu!samsung!cs.utexas.edu!uunet!lll-winken!iggy.GW.Vitalink.COM!widener!news
+From: kupiec@marge.cs.widener.edu (Bob Kupiec)
+Newsgroups: rec.games.video.arcade
+Subject: Smash T.V. AGAIN!
+Summary: Looking for Smash T.V. info
+Keywords: cheats Smash T.V.
+Message-ID: <kdr0mkINN3o8@marge.cs.widener.edu>
+Date: 23 Sep 91 05:59:48 GMT
+Sender: kupiec@cs.widener.edu (Bob Kupiec)
+Organization: Widener CS Dept
+Lines: 13
+NNTP-Posting-Host: marge.cs.widener.edu
+
+This is my second try on getting some hints/tips/cheats on the arcade
+game Smash T.V.  I can finish the game easily.  But I have not
+found the "Pleasure Dome" that it talks about.  How do I get to it?
+And what are "Secret Keys"?  I have found then only twice in my hundreds
+of games played.
+
+Am I the only Smash T.V. player here or what? ;)
+
+Thanks.
+-- 
+Internet: kupiec@cs.widener.edu     |  LaSalle University     | Written at:
+  (or)    kupiec@hp800.lasalle.edu  |  20th St. & Onley Ave.  | Widener Univ.
+UUCP:     bob@beyonet.uucp          |  Philadelphia, PA 19141 | Chester, PA
+
+
+Article 2769 of rec.games.video.arcade:
+Path: bronze!news.cs.indiana.edu!mips!zaphod.mps.ohio-state.edu!wupost!unlinfo.unl.edu!gberigan
+From: gberigan@unlinfo.unl.edu (Life...)
+Newsgroups: rec.games.video.arcade
+Subject: Re: Smash TV
+Message-ID: <1991Sep23.195746.29870@unlinfo.unl.edu>
+Date: 23 Sep 91 19:57:46 GMT
+References: <1991Sep22.140303.28552@qualcomm.com>
+Distribution: usa
+Organization: GBBS/ACOS Sysop Support
+Lines: 34
+
+coughlan@maui.qualcomm.com (Sean Coughlan) writes:
+
+>A friend of mine and I have been playing Smash TV for quite a while... We've 
+>"Finished" the game, but the ending says we haven't explored all of the rooms.
+>We accidentally found one of the secret rooms, which warped us past one of the
+>bad guys, but we haven't had any luck trying to get into any of the other
+>secret rooms... Does anyone have any clues?
+
+The warp is an error recovery device.  (This should be in a FAQ by now.)
+One player said they could warp by hitting the side of the cabinet hard.
+
+>I know we need a lot of keys, but
+>does anyone know how many? If it makes any difference, we are playing Rev 5.00
+
+Yeah, it does make a difference.  That version does not have the ending.
+The upgrade is supposedly free, but I've found one place that would not
+upgrade.
+
+>Thanks for any help,
+>Sean
+>SCoughlan@Qualcomm.Com
+
+To the person who said the ending was great, either you have a different
+rating system than I, or perhaps a newer version, or I should have gone
+East instead of South in that last room.  I still haven't found where
+that one image during the demo mode (lower right corner in blue) is
+shown.
+
+--
+ ///   ____   \\\     1 AREA: Infinite  As far as anyone can make out.
+ | |/ /    \ \| |     2 IMPORTS: None   It is impossible to import things into
+  \\_|\____/|_//                        an infinite area there being no outside
+DON'T \_\\\/ PANIC                      to import things in from.
+gberigan `-' unlinfo  3 EXPORTS: None   See Imports.
+

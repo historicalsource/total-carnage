@@ -1,0 +1,21 @@
+.struct disp.equ
+.STRUCT MPROC.EQU
+.STRUCT GAME.EQU
+.STRUCT	SYS.INC
+.km !f1 \ @J"HOME"@K*ACTIVE\ PROC\ PLINK"CR"
+.km !f2 \ @J"HOME"@K*OBJLST\ OBJ\ OLINK"CR"
+.km !f3 \ @J"HOME"@KPALRAM\ PAL\ *"CR"
+.km !f4 \ @J"HOME"@K*BAKLST\ OBJ\ OLINK"CR"
+.km !f5 \ @J"HOME"@K*OFREE\ OBJ\ OLINK"CR"
+
+;**** display SOURCE when cursor on longword in struct or mem display ****
+.km S @M"CR"S"CR"
+;**** display WORDS when cursor on longword in struct or mem display ****
+.km W @M"CR"W"CR"
+; this is a comment
+.wp SAVESCR,UHW
+.WP STATUS,UHW
+.wp CPULEFT,UDW
+.wp CPUAVG,UDW
+.wp START,UHW
+

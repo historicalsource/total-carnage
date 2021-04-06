@@ -1,0 +1,69 @@
+*
+*SECURITY EXERCISE TABLE
+*
+SECBTAB	
+	.BYTE	>F 		;CLEAR THE SUCKER
+	.BYTE	>F 		;CLEAR THE SUCKER
+	.BYTE	>F 		;CLEAR THE SUCKER
+
+	.BYTE	>8		;CLOCK IT
+	.BYTE	>45		;READ A 4
+
+	.BYTE	>4		;LOAD SEED
+	.BYTE	>3		;LOAD A 3
+
+	.BYTE	>8		;CLOCK IT
+	.BYTE	>8		;CLOCK IT
+	.BYTE	>8		;CLOCK IT
+	.BYTE	>F5		;READ AN F
+
+	.BYTE	>8		;CLOCK IT
+	.BYTE	>8		;CLOCK IT
+	.BYTE	>A5		;READ AN A
+
+	.BYTE	>FF		;ITS ALL OVER
+	.EVEN
+
+**************************************************************************
+*								         *
+* SECURITY - AND FINALLY ... THERE IS SECURITY!				 *
+* B0 = RETURN ADDRESS							 *
+* SETS GLOBAL SEC_FLAG TO 1 IF BREECH!					 *
+* NOTE: TRASHES A0,A1,A2,A3,A4,A6					 *
+*								         *
+**************************************************************************
+SECURITY
+	CLR	A0
+	MOVE	A0,@SEC_FLAG,W
+	MOVI	SECBTAB,A0
+	GETST	A6
+	DINT
+SECLOOP
+	MOVB	*A0,A1	
+	ADDK	8,A0
+	SLL	24,A1			; STRIP OUT THE CRUD
+	SRL	24,A1			
+	CMPI	>FF,A1
+	JREQ	SECCHX			; WE ARE DONE
+	MOVE	A1,A2
+	SLL	8,A1
+	MOVI	SECCHIP/2,A3
+	SLL	1,A3
+	ANDI	>0F00,A1
+	MOVE	A1,*A3,W
+	CMPI	>0500,A1		;READ IT ?
+	JRNE	SECLOOP			;NO READ CYCLE
+
+	MOVE	*A3,A4,W		;CHECK OUT READ DATA
+	SLL	16,A4
+	SRL	28,A4
+	SRL	4,A2
+	CMP	A4,A2
+	JREQ	SECLOOP
+SECERR					;BOGUS SHIT = ERROR
+	MOVK	1,A0
+	MOVE	A0,@SEC_FLAG,W
+SECCHX	
+	PUTST	A6
+	FRET	B0
+
